@@ -1,0 +1,43 @@
+(o) - Antes tenía todos los titles cómo "Editorial Intelectos"
+ahora la sección de:
+carrito.html -> "carrito de compras"
+contacto.html -> "contacto"
+faqs.html -> "Preguntas Frecuentas"
+inicsesion.html -> "Iniciar Sesión"
+mayoristas.html -> "Compra mayorista"
+productos.html -> "Nuestros Productos"
+registro.html -> "registrate"
+(o) modifiqué "suscribete!" de index -> <h3> a <h6> para que cumpla con SEO.
+(o) agregé todos las keywords personalizadas a las secciones:
+carrito.html, contacto.html, faqs.html, inicsesion.html, mayoristas.html, productos.html
+registro.html
+(o) agregué el logo de whatsapp (fixed) para que el usuario tenga un contacto más rápido con la sección de ventas.
+(o) el whatsapp (fixed) abre la aplicación (en android) o whatsapp desktop (en desktop) con un mensaje predefinido "¡Hola Editorial Intelectos! quería preguntar sobre..."
+-- se encuentra en todas las páginas.
+(o) cambié todas las imagenes de cancioneros de JPG a png
+(o) eliminé todos los metadatos de las imagenes
+(o) agregué los alt="" faltantes en los productos "cancioneros" (mayoristas.html)
+(o) agregué los alt="" faltantes en los productos "revistas" (mayoristas.html)
+(o) <meta description> en todas las secciones.
+- todas las descripciones con menos de 160 caracteres
+- todas las keywords entre 4 y 8 palabras.
+(o) cree la pagina p404.html para redireccionar un error 404
+(o) cambié todas las imagenes de la parte de "varios"(libros) a png.
+(o) comprimí todos los videos (que luego serán hero) ubicados en index.html
+(o) agregué los 'posters="" ' para que se visualice una imagen antes que el video durante la carga.
+(o) además para bajar el peso de los video los recorté en sony vegas (para su posterior compresión)
+(o) agregué un icono en la pestaña con la forma de un libro.
+"<link rel="shortcut icon" href="../images/book-solid.svg" />"
+para que no aparezca el "mundito"
+
+
+-- de 315Mb a 72Mb
+(voy a seguir comprimiendo pero al ser una página llena de imagenes se me complica un poco y la desición de los 3 videos... también me aumenta mucho el peso. voy a pensar en que hacer...)
+un abrazo fedex.
+
+
+
+
+
+
+
