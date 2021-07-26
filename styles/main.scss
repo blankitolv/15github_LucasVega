@@ -680,9 +680,9 @@ header {
             align-items: center;
             justify-content: space-evenly;
             .footer-logo {
-                width: 110px;
-                height: 60px;
-                background-image: url('../images/logointelectos3.png');
+                width: 147px;
+                height: 58px;
+                background-image: url('../images/logo_blanco.png');
                 background-position: center;
                 background-size: cover;
             }
@@ -701,7 +701,8 @@ header {
                     &:hover a{
                         filter: blur(2px);
                     }
-                    li {
+                    li { 
+                        color: rgb(179, 0, 0);
                         display: inline-block;
                         margin: 0 15px;
                         width: 50px;
@@ -738,8 +739,19 @@ header {
                 margin-right: 150px;
                 ul{
                     li{
-                        color: white;
-                        text-decoration: none;
+                        &:first-of-type {
+                            margin-bottom: 5px;
+                            color: rgb(179, 0, 0);
+                            font-weight: bold;
+                        }
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            &:hover {
+                                color:rgb(221, 221, 221)
+                            }
+                        }
+                        
                     }
                 }
             }
