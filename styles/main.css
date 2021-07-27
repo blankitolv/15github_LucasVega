@@ -951,9 +951,9 @@ header img {
 }
 
 .footer .footer-container .footer-izquierda .footer-logo {
-  width: 110px;
-  height: 60px;
-  background-image: url("../images/logointelectos3.png");
+  width: 147px;
+  height: 58px;
+  background-image: url("../images/logo_blanco.png");
   background-position: center;
   background-size: cover;
 }
@@ -982,6 +982,7 @@ header img {
 }
 
 .footer .footer-container .footer-izquierda .footer-social ul li {
+  color: #b30000;
   display: inline-block;
   margin: 0 15px;
   width: 50px;
@@ -1029,9 +1030,19 @@ header img {
   margin-right: 150px;
 }
 
-.footer .footer-container .footer-derecha .footer-mapa ul li {
+.footer .footer-container .footer-derecha .footer-mapa ul li:first-of-type {
+  margin-bottom: 5px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+.footer .footer-container .footer-derecha .footer-mapa ul li a {
   color: white;
   text-decoration: none;
+}
+
+.footer .footer-container .footer-derecha .footer-mapa ul li a:hover {
+  color: #dddddd;
 }
 
 /******************/
