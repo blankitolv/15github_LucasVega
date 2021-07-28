@@ -2,6 +2,7 @@
     margin: 0px;
     padding:0px;
 }
+
 /******************/
 /* VARIABLES SASS */
 /******************/
@@ -168,6 +169,54 @@ header {
 
 /* novedades index */
 .marcas {
+    .container-hero-video {
+        width: 100%;
+        height: 110vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            content: '';
+            z-index:10;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.3);
+
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            object-fit: cover;                
+        }
+        .hero-textura {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 22;
+            background: url('/images/45-degree-fabric-dark.png');
+        }
+        .titulo-hero {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 22;
+            text-align: center;
+            color: #fff;
+            font-weight: 900;
+            border: 5px white solid;
+            padding: 40px;
+        }
+    }
     .producto{
         h2 {
             text-align: center;
@@ -188,20 +237,6 @@ header {
         a:link,a:visited {
             h2 {
                 color: rgb(94, 60, 60); 
-            }
-        }
-        .container-hero-video {
-            width: 100%;
-            height: 100vh;
-            background: burlywood;
-            display: inline-block;
-            .video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 5;
-                margin-bottom: 30px;
-                
             }
         }
         .caja{
