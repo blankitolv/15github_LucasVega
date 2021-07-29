@@ -10,51 +10,11 @@
 $viejito: rgb(245, 245, 236);
 $blanco:rgb(255,255,255);
 $marroncito: rgb(138, 17, 17);
-$negro: rgb(0,0,0);
-/* GRIDS */
-#caja-grid-index {
-    display: grid;
-    grid-template-areas:
-    "header header"
-    "none carritoG"
-    "none whatsapp"
-    "main main"
-    "footer footer";
-    grid-template-rows:7em 100px 100px 3fr 0em;
-}
-/* caja flexbox utilizada en los productos de novedades (index.html) */
+$negro: rgb(121, 94, 94);
 
-.ver-cosas {
-    grid-area: ver;
-    background-color: #677200;
-}
-.descripcion-producto {
-    grid-area: desc;
-    background-color: #720046;
-}
-
-header {
-    grid-area: header;
-}
-
-#CarritoG{
-    grid-area: carritoG;
-}
-
-.snd-whatsapp {
-    grid-area: whatsapp;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-/****************************FIN GRIDS */
 /********* BODY **************/
 body {
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     a {
         text-decoration: none;
@@ -67,19 +27,13 @@ body {
 /************* header **************/
 header {
     width: 100%;
-    height: 50rem;
-    position: absolute;
+    position: relative;
     nav {
-        background: url('../images/backhome.jpg');
         width: 100%;
-        height: 35rem;
-        background-position: center;
-        background-size: cover;
-        position: relative;
         .nav-contain {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: baseline;
             box-sizing: border-box;
             width: 100%;
             height: 12vh;
@@ -89,6 +43,7 @@ header {
                 margin: auto 15px;
                 width: 20%;
                 min-width: 210px;
+                white-space: nowrap;
             }
             ul {
                 display: flex;
@@ -188,83 +143,49 @@ header {
         }
     }
 }
-// .bkg-container {
-//     width: 100%;
-//     height: 100vh;
-//     .bkg-image-header {
-//         width: 100%;
-//         height: 70vh;
-//         background-image: url('../images/backhome.jpg');
-//         background-position: center;
-//         background-size: cover;
-//     }        
-// }
-// header {
-//     a {
-//         text-decoration: none;
-//     }
-//     nav {
-//         li {
-//             margin-right: 10px;
-//         }
-//         #submenu {
-//             a:visited,a:link {
-//                 color:rgb(54, 54, 54);
-//             }
-//             a:hover {
-//                 color:white;
-//                 text-shadow: 0px 0px 3px rgb(19, 19, 19);
-//             }
-//             text-align: center;
-//             font-weight: bolder;
-//             margin-top: 5px;
-//             padding: 20px 20px 70px;
-//             font-size: 20px;
-//             background-image:url("../images/hojalibro3.png");
-//             box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-//             ul {
-//                 display: inline-block;
-//                 li {
-//                     display: inline-block;
-//                 }
-//                 li:hover {
-//                     .menuDesplegable {
-//                         display: block;
-//                     }
-//                 }
-//             }
-//             // menu desplegable
-//             .menuDesplegable {
-//                 display: none;
-//                 position: absolute;
-//                 padding-top: 30px;
-//             }
-//         }
-//         #supramenu {
-//             background-color: $blanco;
-//             padding-top: 10px;
-//             margin-bottom: none;
-//             border: none;
-//             ul {
-//                 text-align: right;
-//                 li {
-//                     display: inline-block;
-//                     padding: 5px;
-//                     margin-top: 2px;
-//                 }
-//             }
-//         }
-//     }
-//     img {
-//         display: inline-block;
-//         text-align: left;
-//         border:solid white 4px;
-//         margin-top: 5px;
-//         margin-bottom: 10px;
-//     }
-// } 
+.bkg-container {
+    width: 100%;
+    height: auto;
+    position: relative;
 
-
+    .bkg-image-index {
+        width: 100%;
+        height: 100vh;
+        // background-image: linear-gradient(rgba(0, 105, 153, 0.5), rgba(0, 0, 0, 0.3)), url("../images/backhome.jpg");
+        background-image: url(../images/backhome.jpg);
+        background-position:center;
+        background-size: cover;
+        position: relative;
+        top: 12%;
+        left: 0;
+        z-index: 5;
+        background-attachment: fixed;
+        .bkg-texto {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 45px;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-size: 17pt;
+            }
+            span {
+                padding: 15px 0px;
+                color: #34b1c4;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                font-size: 20pt;
+                line-height: 20px;
+                
+            }
+        }
+    }        
+}
 .fixed-whatsapp {
     display: flex;
     flex-direction: column;
@@ -296,7 +217,7 @@ header {
     background-color: rgb(245, 245, 236);
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
     h2 {
-        font-size: 25px;
+        font-size: 23;
         text-align: center;
         margin: auto auto ;
         padding: 20px;
@@ -310,8 +231,9 @@ header {
         height: 110vh;
         position: relative;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content:flex-end;
         &::after{
             width: 100%;
             height: 100%;
@@ -345,12 +267,26 @@ header {
             position: relative;
             top: 0;
             left: 0;
-            z-index: 22;
+            z-index: 30;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             color: #fff;
-            font-weight: 900;
-            border: 5px white solid;
             padding: 40px;
+            h2 {
+                font-size: 30pt;
+                font-weight: 500;
+                margin-bottom: 40px;
+                letter-spacing: 5px;
+            }
+            p{
+                text-align: left;
+                font-size: 18pt;
+                letter-spacing: 2px;
+                max-width: 70%;
+            }
         }
     }
     .producto{
@@ -1597,17 +1533,6 @@ hr{
 }
 /* querys */
 @media only screen and (min-width:414px) and (max-width:838px) {
-    #caja-grid-index {
-        display: grid;
-        grid-template-areas:
-        "header"
-        "carritoG"
-        "whatsapp"
-        "main"
-        "main"
-        "footer";
-        grid-template-columns: 51em;
-    } 
     .novedades {
         width: 100%;
         height: 70%;
@@ -1636,17 +1561,6 @@ hr{
 }
 
 @media only screen and (max-width:414px) {
-    #caja-grid-index {
-        display: grid;
-        grid-template-areas:
-        "header"
-        "carritoG"
-        "whatsapp"
-        "main"
-        "main"
-        "footer";
-        grid-template-columns: 30em;
-    } 
     .snd-whatsapp {
         position: fixed;
         bottom: 2%;

@@ -8,62 +8,9 @@
 /******************/
 /* VARIABLES SASS */
 /******************/
-/* GRIDS */
-#caja-grid-index {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header header" "none carritoG" "none whatsapp" "main main" "footer footer";
-  -ms-grid-rows: 7em 100px 100px 3fr 0em;
-      grid-template-rows: 7em 100px 100px 3fr 0em;
-}
-
-/* caja flexbox utilizada en los productos de novedades (index.html) */
-.ver-cosas {
-  grid-area: ver;
-  background-color: #677200;
-}
-
-.descripcion-producto {
-  grid-area: desc;
-  background-color: #720046;
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: header;
-}
-
-#CarritoG {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: carritoG;
-}
-
-.snd-whatsapp {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: whatsapp;
-}
-
-main {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: main;
-}
-
-footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: footer;
-}
-
-/****************************FIN GRIDS */
 /********* BODY **************/
 body {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -78,17 +25,11 @@ body ul {
 /************* header **************/
 header {
   width: 100%;
-  height: 50rem;
-  position: absolute;
+  position: relative;
 }
 
 header nav {
-  background: url("../images/backhome.jpg");
   width: 100%;
-  height: 35rem;
-  background-position: center;
-  background-size: cover;
-  position: relative;
 }
 
 header nav .nav-contain {
@@ -97,9 +38,9 @@ header nav .nav-contain {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -112,6 +53,7 @@ header nav .nav-contain h1 {
   margin: auto 15px;
   width: 20%;
   min-width: 210px;
+  white-space: nowrap;
 }
 
 header nav .nav-contain ul {
@@ -261,6 +203,57 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   }
 }
 
+.bkg-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bkg-container .bkg-image-index {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/backhome.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 12%;
+  left: 0;
+  z-index: 5;
+  background-attachment: fixed;
+}
+
+.bkg-container .bkg-image-index .bkg-texto {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bkg-container .bkg-image-index .bkg-texto p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 45px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 17pt;
+}
+
+.bkg-container .bkg-image-index .bkg-texto span {
+  padding: 15px 0px;
+  color: #34b1c4;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 20pt;
+  line-height: 20px;
+}
+
 .fixed-whatsapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,7 +302,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 }
 
 .caja h2 {
-  font-size: 25px;
+  font-size: 23;
   text-align: center;
   margin: auto auto;
   padding: 20px;
@@ -323,12 +316,16 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .marcas .container-hero-video::after {
@@ -367,12 +364,37 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 22;
+  z-index: 30;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
-  font-weight: 900;
-  border: 5px white solid;
   padding: 40px;
+}
+
+.marcas .container-hero-video .titulo-hero h2 {
+  font-size: 30pt;
+  font-weight: 500;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
+.marcas .container-hero-video .titulo-hero p {
+  text-align: left;
+  font-size: 18pt;
+  letter-spacing: 2px;
+  max-width: 70%;
 }
 
 .marcas .producto {
@@ -2085,13 +2107,6 @@ hr {
 
 /* querys */
 @media only screen and (min-width: 414px) and (max-width: 838px) {
-  #caja-grid-index {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "header" "carritoG" "whatsapp" "main" "main" "footer";
-    -ms-grid-columns: 51em;
-        grid-template-columns: 51em;
-  }
   .novedades {
     width: 100%;
     height: 70%;
@@ -2138,13 +2153,6 @@ hr {
 }
 
 @media only screen and (max-width: 414px) {
-  #caja-grid-index {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "header" "carritoG" "whatsapp" "main" "main" "footer";
-    -ms-grid-columns: 30em;
-        grid-template-columns: 30em;
-  }
   .snd-whatsapp {
     position: fixed;
     bottom: 2%;
