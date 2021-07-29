@@ -395,138 +395,25 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   font-size: 18pt;
   letter-spacing: 2px;
   max-width: 70%;
+  margin-bottom: 30px;
+}
+
+.marcas .container-hero-video .titulo-hero .resaltador {
+  color: #87dede;
 }
 
 .marcas .producto {
-  /* novedades */
-}
-
-.marcas .producto h2 {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.marcas .producto h3 {
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-align: center;
-  display: block;
-}
-
-.marcas .producto a {
-  margin-left: 15px;
-}
-
-.marcas .producto a:link h2, .marcas .producto a:visited h2 {
-  color: #5e3c3c;
-}
-
-.marcas .producto .caja {
-  background-color: #f5f5ec;
-  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
-}
-
-.marcas .producto .caja h2 {
-  font-size: 25px;
-  text-align: center;
-  margin: auto auto;
-  padding: 20px;
-}
-
-.marcas .producto .novedades {
-  margin-top: 20px;
   width: 100%;
-  height: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  /*parrafo producto */
-  /* .productos-novedades */
-}
-
-.marcas .producto .novedades .parrafo-producto {
-  height: auto;
-  width: 50%;
-  min-width: 150px;
-  padding: 15px;
-  margin: 15px;
-}
-
-@media (max-width: 834) {
-  .marcas .producto .novedades .parrafo-producto .parrafo-producto {
-    width: 90%;
-  }
-}
-
-.marcas .producto .novedades .parrafo-producto p {
-  text-transform: uppercase;
-  color: #686363;
-  text-align: justify;
-  letter-spacing: 2px;
-  line-height: 35px;
-  font-weight: bold;
-}
-
-.marcas .producto .novedades .productos-novedades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.marcas .producto .novedades .productos-novedades .terna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.marcas .producto .novedades .productos-novedades .terna article {
-  padding: 15px;
-  margin: 15px;
-}
-
-.marcas .producto .novedades .productos-novedades .terna article a {
-  display: block;
-  color: #8a1111;
-  font-weight: 300;
-  margin-top: 5px;
 }
 
 .marcas .send-novedades {
   width: 100%;
+  height: 300px;
   position: relative;
-  height: auto;
-  padding: 1px;
+  padding: 1px 0;
   margin: 10px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/letters.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/letters.jpg");
-  overflow: hidden;
 }
 
 .marcas .send-novedades .container-news {
