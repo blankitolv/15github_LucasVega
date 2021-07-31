@@ -97,43 +97,50 @@
 		<!-- fin MANDANOS UN WHATSAPP -->
 		<main>
 			<section class="marcas">
+				<!-- video background con explicación de la marca  -->
 				<div class="container-hero-video">
 					<div class="hero-textura">
-						
 					</div>
 					<video src="./media/0hombre-guitarra_reducido.mp4" muted loop autoplay preload="auto"></video>
 					<div class="titulo-hero">
 						<h2>CANCIONERO</h2>
 						<p>Desde hace <span class="resaltador">20 años</span> fabricamos los cancioneros más populares del interior del país. Por la exactitud de
-							sus extracciones armónicas, sus esquemas de fácil lectura y su práctico formato, recibimos la
-							preferencia de incontables músicos en formación. <br> <br>
-							La variedad de títulos cubren un gran abanico de estilos musicales, cada cancionero incluye canciones de
-							baja, mediana y alta complejidad, seleccionadas para que cada intérprete pueda ejercitarse acorde a su
-							nivel en el manejo del instrumento.</p>
+						sus extracciones armónicas, sus esquemas de fácil lectura y su práctico formato, recibimos la
+						preferencia de incontables músicos en formación. <br> <br>
+						La variedad de títulos cubren un gran abanico de estilos musicales, cada cancionero incluye canciones de
+						baja, mediana y alta complejidad, seleccionadas para que cada intérprete pueda ejercitarse acorde a su
+						nivel en el manejo del instrumento.</p>
 					</div>
 				</div>
-				<div class="contenedor-carousel">
-					<h3>Nuestros Productos más vendidos</h3>
+				<!-- <div class="contenedor-carousel"> -->
 					<div class="bkg-container-carousel">
-						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="texto-carousel">
+							<h3>#mas vendidos</h3>
+							<p>Actualizamos, mejoramos e incorporamos nuestros productos asiduamente.</p>
+						</div>
+						<!-- botones debajo de las tarjetas -->
+						<div id="carouselCancionero" class="carousel slide " data-bs-ride="carousel">
 							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselCancionero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselCancionero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselCancionero" data-bs-slide-to="2" aria-label="Slide 3"></button>
 							</div>
-							<div class="carousel-inner">
+							<!-- carousel  -->
+							<div class="carousel-inner pt-5">
 								  <div class="carousel-item active" data-bs-interval="3000">
-									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-content-center justify-content-center">
-										<!-- tarjeta cancionero 1 -->
-										<div class="card" style="width: 15rem;">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 1 cancionero 1 -->
+										<div class="card" style="width: 15rem; z-index:2;">
 											<img src="./images/cancioneros-new/redondos.png" class="card-img-top" alt="...">
 											<div class="card-body">
 												<h5 class="card-title">Patricio Rey y sus Redonditos de Ricota</h5>
-												<p class="card-text"><b>Incluye: </b> <i>El Pibe de los Astilleros - La Hija del Fletero - Masacre en el puticlub</i></p>
+												<p class="card-text"><b>Incluye: </b> <i>El Pibe de los Astilleros - La Hija del Fletero - Masacre en el puticlub, vencedores vencidos</i></p>
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- tarjeta cancionero 2 -->
+										<!-- tarjeta slider 1 cancionero 2 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/rodriguez.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -142,7 +149,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- tarjeta cancionero 3 -->
+										<!-- tarjeta slider 1 cancionero 3 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/rolingas.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -151,7 +158,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- tarjeta cancionero 4 -->
+										<!-- tarjeta slider 1 cancionero 4 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/rolingas2.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -160,26 +167,27 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- <div class="card" style="width: 15rem;">
-											<img src="./images/cancioneros-new/sabina.png" class="card-img-top" alt="...">
-											<div class="card-body">
-												<h5 class="card-title"></h5>
-												<p class="card-text"></p>
-												<a href="#" class="btn btn-primary">Añadir al carrito</a>
-											</div>
-										</div> -->
+										<!-- espacio  -->
+										<div class="space-user"></div>
 									</div>
 								</div>
+								<!-- fin del primer carousel -->
+								<!-- comiendo del segundo carousel  -->
 								<div class="carousel-item" data-bs-interval="5000">
-									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-content-center justify-content-center">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 2 cancionero 1 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/soda.png" class="card-img-top" alt="...">
+											<div class="space-user"></div>
 											<div class="card-body">
 												<h5 class="card-title">Soda Stéreo</h5>
 												<p class="card-text"><b>Incluye: </b><i>Ella usó mi cabeza como un revólver, Canción Animal, De Música Ligera, El Rito, Persiana Americana, En la Ciudad de la Furia</i></p>
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 2 cancionero 2 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/sole.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -188,6 +196,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 2 cancionero 3 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/sosa.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -196,6 +205,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 2 cancionero 4 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/spinetta.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -204,18 +214,15 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- <div class="card" style="width: 13rem;">
-											<img src="./images/cancioneros-new/sui.png" class="card-img-top" alt="...">
-											<div class="card-body">
-												<h5 class="card-title"></h5>
-												<p class="card-text"></p>
-												<a href="#" class="btn btn-primary">Añadir al carrito</a>
-											</div>
-										</div> -->
+										<!-- espacio  -->
+										<div class="space-user"></div>
 									</div>
 								</div>
 								<div class="carousel-item" data-bs-interval="7000">
-									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-content-center justify-content-center">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 3 cancionero 1 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/zcalamaro.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -224,6 +231,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 3 cancionero 2 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/zcharly.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -232,6 +240,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 3 cancionero 3 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/zdivi.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -240,6 +249,7 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
+										<!-- tarjeta slider 3 cancionero 4 -->
 										<div class="card" style="width: 15rem;">
 											<img src="./images/cancioneros-new/zintoxicado.png" class="card-img-top" alt="...">
 											<div class="card-body">
@@ -248,166 +258,214 @@
 												<a href="#" class="btn btn-primary">Añadir al carrito</a>
 											</div>
 										</div>
-										<!-- <div class="card" style="width: 13rem;">
-											<img src="./images/cancioneros-new/zchalcha.png" class="card-img-top" alt="...">
-											<div class="card-body">
-												<h5 class="card-title"></h5>
-												<p class="card-text"></p>
-												<a href="#" class="btn btn-primary">Añadir al carrito</a>
-											</div>
-										</div> -->
+										<!-- espacio  -->
+										<div class="space-user"></div>
 									</div>
 								</div>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							<button class="carousel-control-prev " type="button" data-bs-target="#carouselCancionero" data-bs-slide="prev">
 							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							  <span class="visually-hidden">Previous</span>
 							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							<button class="carousel-control-next " type="button" data-bs-target="#carouselCancionero" data-bs-slide="next">
 							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							  <span class="visually-hidden">Next</span>
 							</button>
 						</div>
 					</div>
-				</div>
-				<!-- <article class="producto" id="cancionero ">
-					<!-- <section class="novedades"> -->
-						<!-- <div class="productos-novedades">
-							<h3>NOVEDADES</h3>
-							<div class="terna">
-								<article>
-									<a href="./images/cancionero/folk1.png" target="_blank"><img src="./images/cancionero/folk11.png" alt="tapa cancionero folklore 1"></a>
-									<a  href="#">FOLKLORE ARGENTINO 1</a>
-								</article>
-								<article>
-									<a href="./images/cancionero/bersuit.png" target="_blank"><img src="./images/cancionero/bersuit1.png" alt="tapa cancionero bersuit vergarabat"></a>
-									<a href="#">BERSUIT VERGARABAT 1</a>
-								</article>
-								<article>
-									<a href="./images/cancionero/lospiojos.png" target="_blank"><img src="./images/cancionero/lospiojos1.png" alt="tapa cancionero los piojos"></a>
-									<a href="#">LOS PIOJOS 1</a>
-								</article>
+					<div class="send-novedades">
+						<!-- icono de newsletter -->
+						<div class="container-news">
+							<div class="icon-news">
+								<i class="fas fa-envelope-open-text"></i>
 							</div>
-							<div class="terna">
-								<article>
-									<a href="./images/cancionero/losredon2.png" target="_blank"><img src="./images/cancionero/losredon21.png" alt="tapa cancionero los redondos"></a>
-									<a href="#">LOS REDONDOS</a>
-								</article>
-								<article>
-									<a href="./images/cancionero/rocknac.png" target="_blank"><img src="./images/cancionero/rocknac1.png"  alt="tapa cancionero rock nacional"></a>
-									<a href="#">ROCK NACIONAL</a>
-								</article>
-								<article>
-									<a href="./images/cancionero/rueda.png" target="_blank"><img src="./images/cancionero/rueda1.png" alt="tapa cancionero rueda de acordes"></a>
-									<a href="#">RUEDA DE ACORDES</a>
-								</article>
+							<div class="content-news">
+								<h6>SUSCRIBETE!</h6>
+								<p>suscribiendote nosotros te mantendremos informado sobre <br>
+								<span> promociones, rebajas y novedades</span></p>
+								<form action="#">
+									<input type="email" placeholder="ingrese su email">
+									<button>Suscribirme</button>
+								</form>
 							</div>
-							<div class="terna">
-								<article>
-									<a href="./images/cancionero/beat1.png" target="_blank"><img src="./images/cancionero/beat1.png" alt="tapa cancionero beatles1"></a>
-									<a href="#">BEATLES 1</a>										
-								</article>
-								<article>
-									<a href="./images/cancionero/sui.png" target="_blank"><img src="./images/cancionero/sui1.png" alt="tapa cancionero sui generies"></a>
-									<a href="#">SUI GENERIES</a>
-								</article>
-								<article>
-									<a href="./images/cancionero/pappo.png" target="_blank"><img src="./images/cancionero/pappo1.png" alt="tapa cancionero pappo"></a>
-									<a href="#">PAPPO</a>
-								</article>
-							</div>
-						</div> -->
-					<!-- </section> 
-				</article> -->
-				<div class="send-novedades">
-					<!-- icono de newsletter -->
-					<div class="container-news">
-						<div class="icon-news">
-							<i class="fas fa-envelope-open-text"></i>
-						</div>
-						<div class="content-news">
-							<h6>SUSCRIBETE!</h6>
-							<p>Colocando tu email, nosotros te mantendremos informado sobre <br>
-							<span> promociones, rebajas y novedades</span></p>
-							<form action="#">
-								<input type="email" placeholder="ingrese su email">
-								<button>Suscribirme</button>
-							</form>
 						</div>
 					</div>
-				</div>
-				<article class="producto" id="miafitas">
 					<!-- SEGUNDA marca de la empresa -->
 					<!-- imagen de la marca con movimiento -->
-					<div class="containter-hero-slider">
-						<div class="hero-video home-hero d-inline-block" role="banner">
-							<video class="w-100 h-50" autoplay="" id="heroVideo" loop="" muted="" poster="./images/0mujer-leyendo.png">
-								<source src="./media/0mujer-leyendo_reducido.mp4" type="video/mp4">
-							<div class="hero-slider-text">
-								<p>Edición Musical</p>
-								<p>Cancioneros para guitarra, piano y más...</p>
-							</div>
-							</video>
-							<img alt="poster image mobile" class="poster img-fluid mx-auto d-block d-sm-none" src="./images/0mujer-leyendo.png" />
+					<div class="container-hero-video">
+						<div class="hero-textura">
 						</div>
-					</div>				
-					<div class="caja">
-						<a href="./pages/miafitas.html"><h2>MIAFITAS</h2></a>
-					</div>
-					<section class="novedades caja">
-						<div class="parrafo-producto">
-							<p>Las ediciones Miafita son, desde hace más de 15 años, las publicaciones más económicas y diversas del
-								rubro editorial. Con contenidos sólidos, avalados por supervisiones respetables, el catálogo de Miafita
-								ha abarcado temas tan diversos como Yoga, Poesía, Magia, Dietas Especiales, Santería, etc. <br><br>
+						<video src="./media/0mujer-leyendo_reducido.mp4" muted loop autoplay preload="auto"></video>
+						<div class="titulo-hero">
+							<h2>MIAFITAS</h2>
+							<p>Las ediciones Miafita son, desde hace <span class="resaltador2">más de 15 años</span>, las publicaciones más económicas y diversas del
+								rubro editorial. <br> Con contenidos sólidos, avalados por supervisiones respetables, el catálogo de Miafita
+								ha abarcado temas tan diversos como Yoga, Poesía, Magia, Dietas Especiales, Santería, etc. <br>
 								Con el prestigio de haber ganado la predilección del público en el segmento de ediciones breves, y la
 								satisfacción de que nuestros cuadernillos sean elegidos en forma permanente para consultas puntuales.<p>
 						</div>
-						<div class="productos-novedades">
-							<h3>NOVEDADES</h3>
-							<div class="terna">
-								<article>
-									<a href="./images/miafitas/1calorias.jpg" target="_blank"><img src="./images/miafitas/1caloriasp.png" alt="tapa revista bajas calorias"></a>
-									<a  href="./images/miafitas/1calorias.jpg" target="_blank"><span>BAJAS CALORIAS</span></a>										
-								</article>
-								<article>
-									<a href="./images/miafitas/2diabeticos.jpg" target="_blank"><img src="./images/miafitas/2diabeticosp.png" alt="tapa revista recetas diabeticos"></a>
-									<a  href="./images/miafitas/2diabeticos.jpg" target="_blank"></span>RECETAS PARA <br>DIABETICOS</span></a>
-								</article>
-								<article>
-									<a href="./images/miafitas/3disco.jpg" target="_blank"><img src="./images/miafitas/3discop.png" alt="tapa revista receta disco de arado"><br></a>
-									<a  href="./images/miafitas/3disco.jpg" target="_blank"></span>DISCO DE ARADO</span></a>
-								</article>
-							</div>
-							<div class="terna">
-								<article>
-									<a href="./images/miafitas/4nBebe.jpg" target="_blank"><img src="./images/miafitas/4nBebep.png" alt="tapa revista nombres de bebe"><br></a>
-									<a  href="./images/miafitas/4nBebe.jpg" target="_blank"></span>NOMBRES DE BEBE</span></a>
-								</article>
-								<article>
-									<a href="./images/miafitas/5numerologia.jpg" target="_blank"><img src="./images/miafitas/5numerologiap.png" alt="tapa revista numerología"><br></a>
-									<a  href="./images/miafitas/5numerologia.jpg" target="_blank">NUMEROLOGÍA</a>
-								</article>
-								<article>
-									<a href="./images/miafitas/6reiki.jpg" target="_blank"><img src="./images/miafitas/6reikip.png" alt="tapa revista reiki"><br></a>
-									<a  href="./images/miafitas/6reiki.jpg" target="_blank">REIKI</a>
-							</div>
-							<div class="terna">
-								<article>
-									<a href="./images/miafitas/7tarot.jpg" target="_blank"><img src="./images/miafitas/7tarotp.png" alt="tapa revista tarot"><br></a>
-									<a  href="./images/miafitas/7tarot.jpg" target="_blank">TAROT</a>
-								</article>
-								<article>
-									<a href="./images/miafitas/8veganos.jpg" target="_blank"><img src="./images/miafitas/8veganosp.png" alt="tapa revista receta veganos"><br></a>
-									<a  href="./images/miafitas/8veganos.jpg" target="_blank">RECETAS PARA <br>VEGANOS</a>
-								</article>
-								<article>
-									<a href="./images/miafitas/9yoga.jpg" target="_blank"><img src="./images/miafitas/9yogap.png" alt="tapa revista yoga"><br></a>
-									<a  href="./images/miafitas/9yoga.jpg" target="_blank">YOGA</a>
-								</article>
-							</div>
+					</div>	
+					<div class="bkg-container-carousel">
+						<div class="texto-carousel">
+							<h3>#mas vendidos</h3>
+							<p>Actualizamos, mejoramos e incorporamos nuestros productos asiduamente.</p>
 						</div>
-					</section>
-				</article>
+						<!-- botones debajo de las tarjetas -->
+						<div id="carouselMiafita" class="carousel slide " data-bs-ride="carousel">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselMiafita" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselMiafita" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselMiafita" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<!-- carousel  -->
+							<div class="carousel-inner pt-5">
+								  <div class="carousel-item active" data-bs-interval="3000">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 1 cancionero 1 -->
+										<div class="card" style="width: 15rem; z-index:2;">
+											<img src="./images/miafitas-new/aromateriapa.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Aromaterapia</h5>
+												<p class="card-text"> El poder curativo que encierran las fragancias </p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 1 cancionero 2 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/cartas.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Silvio Rodríguez</h5>
+												<p class="card-text">Introducción a la Cartomancia <br>
+																	Método de curación de las cartas.</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 1 cancionero 3 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/celiacos.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Recetas Para Celíacos</h5>
+												<p class="card-text">Sin T.A.C.C. pero con buen sabor</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 1 cancionero 4 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/feng.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Feng Shui</h5>
+												<p class="card-text">Todo lo que quiere saber sobre Feng Shui para encontrar la armonía personal<p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- espacio  -->
+										<div class="space-user"></div>
+									</div>
+								</div>
+								<!-- fin del primer carousel -->
+								<!-- comiendo del segundo carousel  -->
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 2 cancionero 1 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/frutas.png" class="card-img-top" alt="...">
+											<div class="space-user"></div>
+											<div class="card-body">
+												<h5 class="card-title">Las Frutas Que Curan</h5>
+												<p class="card-text">Todo lo que quiere saber sobre las frutas que curan, la frutoterapia</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 2 cancionero 2 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/hierbas.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Hierbas Curativas</h5>
+												<p class="card-text">Guia completa / yuyos - plantas - semillas - raíces</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 2 cancionero 3 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/mandala.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Mandala</h5>
+												<p class="card-text">Arte meditacion armonía / Mandalas para pintar - Frases para meditar</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 2 cancionero 4 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/nombres.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Nombres de Bebé</h5>
+												<p class="card-text">El origen y significado de los nombres</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- espacio  -->
+										<div class="space-user"></div>
+									</div>
+								</div>
+								<div class="carousel-item" data-bs-interval="7000">
+									<div class="d-flex flex-row bd-highlight mb-3 w-100 h-100 align-items-center justify-content-around">
+										<!-- espacio  -->
+										<div class="space-user"></div>
+										<!-- tarjeta slider 3 cancionero 1 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/piedras.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">La Biblia Cristales y Gemas</h5>
+												<p class="card-text">La bilbia de la gemoterapia: Cristales & Piedras de uso terpeutico</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 3 cancionero 2 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/runas.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Runas</h5>
+												<p class="card-text">Adivinación y oráculo con Runas Vikingas. significados/interpretación/lecturas</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 3 cancionero 3 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/suenos.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Numeros y Sueños</h5>
+												<p class="card-text">El significado de los sueños, los avisos del destino</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- tarjeta slider 3 cancionero 4 -->
+										<div class="card" style="width: 15rem;">
+											<img src="./images/miafitas-new/yoga.png" class="card-img-top" alt="...">
+											<div class="card-body">
+												<h5 class="card-title">Yoga</h5>
+												<p class="card-text">Ejercicios & Posturas. Las Prácticas más importantes para integrar a la vida cotidiana</p>
+												<a href="#" class="btn btn-primary">Añadir al carrito</a>
+											</div>
+										</div>
+										<!-- espacio  -->
+										<div class="space-user"></div>
+									</div>
+								</div>
+							</div>
+							<button class="carousel-control-prev " type="button" data-bs-target="#carouselMiafita" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next " type="button" data-bs-target="#carouselMiafita" data-bs-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>		
 				<div class="container-nuestras-redes">
 					<h6>Conectate con Nosotros</h6>
 					<div class="container-socialMedia">
