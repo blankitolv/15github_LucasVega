@@ -212,7 +212,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 .bkg-container .bkg-image-index {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/backhome.jpg);
+  background-image: url("../images/backhome.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -410,7 +410,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 .marcas .bkg-container-carousel {
   position: relative;
   width: 100%;
-  height: 55rem;
+  height: 60rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 0, 0, 0.8)), to(rgba(0, 25, 46, 0.8))), url("../images/45-degree-fabric-dark.png");
   background-image: linear-gradient(rgba(20, 0, 0, 0.8), rgba(0, 25, 46, 0.8)), url("../images/45-degree-fabric-dark.png");
 }
@@ -1032,12 +1032,11 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  height: 60vh;
-  padding-top: 1px;
+  height: 80vh;
+  position: relative;
 }
 
 .footer .footer-container {
-  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,10 +1052,15 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
           align-items: center;
   width: 100%;
   height: 100%;
-  background-position: bottom right;
+  background-image: url("../images/backhome.jpg");
+  background-position: top 10%;
   background-color: black;
-  background-size: auto;
-  background-image: url(../images/backfooter2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: opacity(110%);
+          filter: opacity(110%);
+  position: inherit;
+  z-index: 0;
 }
 
 .footer .footer-container .footer-izquierda {
@@ -1075,6 +1079,8 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: inherit;
+  z-index: 5;
 }
 
 .footer .footer-container .footer-izquierda .footer-logo {
@@ -1144,6 +1150,8 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 
 .footer .footer-container .footer-derecha {
   margin-right: 150px;
+  position: inherit;
+  z-index: 5;
 }
 
 .footer .footer-container .footer-derecha .footer-mapa {
@@ -1159,17 +1167,34 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 
 .footer .footer-container .footer-derecha .footer-mapa ul li:first-of-type {
   margin-bottom: 5px;
-  color: #b30000;
+  color: #660000;
   font-weight: bold;
+  cursor: default;
 }
 
 .footer .footer-container .footer-derecha .footer-mapa ul li a {
-  color: white;
+  color: #333333;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer .footer-container .footer-derecha .footer-mapa ul li a:hover {
-  color: #dddddd;
+  color: black;
+  font-weight: bolder;
+}
+
+.footer #textura-footer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 /******************/

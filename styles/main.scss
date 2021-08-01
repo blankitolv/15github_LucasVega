@@ -152,7 +152,7 @@ header {
         width: 100%;
         height: 100vh;
         // background-image: linear-gradient(rgba(0, 105, 153, 0.5), rgba(0, 0, 0, 0.3)), url("../images/backhome.jpg");
-        background-image: url(../images/backhome.jpg);
+        background-image: url("../images/backhome.jpg");
         background-position:center;
         background-size: cover;
         position: relative;
@@ -316,7 +316,7 @@ header {
     .bkg-container-carousel {
         position: relative;
         width: 100%;
-        height: 55rem;
+        height: 60rem;
         background-image: linear-gradient(rgba(20, 0, 0, 0.8), rgba(0, 25, 46, 0.8)), url("../images/45-degree-fabric-dark.png");
         .texto-carousel {
             padding-top: 100px;
@@ -622,15 +622,6 @@ header {
 /***********************/
 /* BEGIN PRODUCTOS.HTML*/
 /***********************/
-.cantidad{
-
-}
-#cantidad-articulos{
-
-}
-#cualidad-articulos{
-
-}
 .bg-productos{
     background-color: rgb(241, 241, 236);
     .site-productos {
@@ -834,20 +825,23 @@ header {
     color: whitesmoke;
     box-sizing: border-box;
     width: 100%;
-    height: 60vh;
-    padding-top: 1px;
+    height: 80vh;
+    position: relative;
     .footer-container {
-        margin-top: 1em;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
         height: 100%;
-        background-position: bottom right;
+        background-image: url("../images/backhome.jpg");
+        background-position: top 10%;
         background-color: black;
-        background-size: auto;
-        background-image: url(../images/backfooter2.png);
+        background-size:cover;
+        background-attachment: fixed;
+        filter:opacity(110%);
+        position: inherit;
+        z-index: 0;
         .footer-izquierda {
             width: 400px;
             height: 50vh;
@@ -855,6 +849,8 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+            position: inherit;
+            z-index:5;
             .footer-logo {
                 width: 147px;
                 height: 58px;
@@ -909,6 +905,8 @@ header {
         }
         .footer-derecha {
             margin-right: 150px;
+            position: inherit;
+            z-index: 5;
             .footer-mapa {
                 display: flex;
                 flex-direction: row;
@@ -917,14 +915,17 @@ header {
                     li{
                         &:first-of-type {
                             margin-bottom: 5px;
-                            color: rgb(179, 0, 0);
+                            color: rgb(102, 0, 0);
                             font-weight: bold;
+                            cursor:default;
                         }
                         a {
-                            color: white;
+                            color: rgb(51, 51, 51);
                             text-decoration: none;
+                            font-weight: bold;
                             &:hover {
-                                color:rgb(221, 221, 221)
+                                color:rgb(0, 0, 0);
+                                font-weight: bolder;
                             }
                         }
                         
@@ -933,6 +934,21 @@ header {
             }
 
         }
+    }
+    #textura-footer {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+    //    background: url('/images/black-linen.png');
+        z-index: 3;
+        filter: brightness(90%);
+        -webkit-filter: brightness(90%);
+        -moz-filter: brightness(90%);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+
     }
 }
 // footer {
