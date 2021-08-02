@@ -14,51 +14,73 @@
 	<!-- caracteres description 74 -->
 	<meta name="desciption" content="Editorial Intelectos: Carrito de compras, todo su pedido se encuentra aquí">
 	<!-- FIN SEO -->
-	<link rel="stylesheet" href="../styles/main.css">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/78281c99e8.js" crossorigin="anonymous"></script>
+	<!-- open sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<!-- Roboto -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- iconos fuente  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/78281c99e8.js" crossorigin="anonymous"></script>
+		<!-- iconos google fuente -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+		<!-- fonts -->	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../styles/css/bootstrap.css">
+	<!-- fin bootstrap -->
+	<!-- mis estilos  -->
+	<link rel="stylesheet" href="../styles/main.css">
+	<!-- fin mis estilos  -->
+	<!-- shortcut icon  -->
 	<link rel="shortcut icon" href="../images/book-solid.svg" />
+	<!-- fin estilos -->
 </head>
 	<body>
 		<header>
 			<nav>
-				<div id="supramenu">
-					<ul>
-						<li><a href="./inicsesion.html">INICIAR SESIÓN</a></li>
-						<li><a href=".registro.html">REGISTRARME</a></li>
-					</ul>
-					
-				</div>
-				<div id="submenu">
-					<div>
-						<a href="../index.html"><img src="../images/logointelsombrablanca.png" alt="Intelectos" width="120" height="90" ></a>		
-					</div>
-					<ul>
-						<li><a href="./productos.html"> PRODUCTOS</a>
-							<ul class="menuDesplegable">
-								<li><a href="./productos.html"> CANCIONERO</a></li>
-								<li><a href="./productos.html"> MIAFITA</a></li>
-								<li><a href="./productos.html"> VARIOS </a></li>
-							</ul>
-						</li>	
-						<li> <a href="./mayoristas.html"> MAYORISTA</a></li>
-						<li> <a href="./contacto.html"> CONTACTO</a></li>
-						<li> <a href="#">FAQs</a></li>
+				<div class="nav-contain">
+					<h1><a href="../index.html">Editorial Intelectos</a></h1>
+					<ul class="ulflex">
+						<li><a href="../index.html">inicio</a></li>
+						<li><a href="#">productos</a></li>
+						<li><a href="#">mayorista</a></li>
+						<li><a href="#">contacto</a></li>
+						<li><a href="#">faqs</a></li>
+						<li>
+							<div class="icono-login">
+								<a href="#"><span class="material-icons-outlined">login</span></a>
+							</div>
+							<div>
+								<a href="#">Iniciar Sesión</a>
+							</div>
+						</li>
+						<li><button>Registrarse</button></li>
+						<li>
+							<div class="icono-menu">
+								<a href="#"><span class="material-icons-outlined">menu</span></a>
+							</div>
+							<div>
+								<a href="#">MENU</a>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</nav>
-		</header> 
-		<!-- ----- fin cabecera----- -->
-			<!-- botón MANDANOS UN WHATSAPP -->	
-			<section class="fixed-whatsapp">
-				<a href="https://wa.me/+5493413391348/?text=¡Hola Editorial Intelectos quería preguntar sobre..." target="_blank"><i class="fab fa-whatsapp"></i></a>
-				<a href="https://wa.me/+5493413391348/?text=¡Hola Editorial Intelectos quería preguntar sobre..." target="_blank"><p>¡MANDANOS UN WHATSAPP!</p></a>
-			</section>
-			<!-- fin MANDANOS UN WHATSAPP -->
-		<div class="caja">
-			<h2>DETALLE DEL PEDIDO</h2>				
+		</header>
+		<div class="bkg-container">
+			<div class="bkg-image-index" id="bkg-image-carrito">
+				<div class="bkg-texto">
+					<p class="h1"> DETALLE DEL PEDIDO <br></p>
+					<p>Una vez finalizado el pedido, nos comunicaremos con usted</p>
+				</div>				
+			</div>
 		</div>
 		<main>
 			<div id="caja-carrito">
@@ -156,15 +178,69 @@
 				</div>
 			</div>
 		</main>
-	<footer> <!-- --- pie de página--- -->
-		<section id="suprafooter">
-			<h6>MAPA DEL SITIO</h6>
-			<a href="../index.html">INICIO</a> | <a href="./productos.html">CANCIONERO®</a>  |  <a href="./productos.html">MIAFITA</a>  | <a href="./productos.html">VARIOS</a> | <a href="./mayoristas.html">MAYORISTA</a>  | <a href="./contacto.html">CONTACTO</a>  | <a href="./inicsesion.html">INICIAR SESIÓN</a> | <a href="./registro.html">REGISTRARME</a>  | <a href="./carrito.html">CARRITO</a>
-			<p>Tel: 341123123 | Rosario, Santa Fe, Argentina</p>
-			<p>copyright editorial intelectos 2021</p>
-		</section>
-		<section>
-		</section>
-	</footer>
-</body>
+		<footer class="footer"> <!-- --- pie de página--- -->
+			<div class="footer-container"> 
+				<div id="textura-footer"></div>
+				<div class="footer-izquierda">
+					<div class="footer-logo"></div>
+					<div class="footer-address">
+						<address>
+							<hr>
+							&copy; Blankitolv, LLC. All Rights Reserved. <br>
+							2021 to coderHouse
+							<hr>
+						</address>
+					</div>
+					<div class="footer-social">
+						<ul>
+							<li class="footer-facebook"><a href="#"><i class="fab fa-facebook-f"></a></i></li>
+							<li class="footer-insta"><a href="#"><i class="fab fa-instagram"></a></i></li>
+							<li class="footer-email"><a href="#"><i class="fab fa-google"></a></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-derecha">
+					<div class="footer-mapa">
+						<ul>
+							<li>Productos</li>
+							<li><a href="#">Cancioneros</a></li>
+							<li><a href="#">Miafitas</a></li>
+							<li><a href="#">Varios</a></li>
+						</ul>
+						<ul>
+							<li>Comunicación</li>
+							<li><a href="#">Contacto</a></li>
+							<li><a href="#">Redes Sociales</a></li>
+							<li><a href="#">Faqs</a></li>
+						</ul>
+						<ul>
+							<li>Cuenta</li>
+							<li><a href="#">Iniciar Sesión</a></li>
+							<li><a href="#">Registrarme</a></li>
+						</ul>
+						<ul>
+							<li>Compras</li>
+							<li><a href="#">Mayorista</a></li>
+							<li><a href="#">Carrito</a></li>
+						</ul>
+						
+
+					</div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<!-- <section id="suprafooter">
+				<h6>MAPA DEL SITIO</h6>
+				<a href="./index.html">INICIO</a> | <a href="./pages/productos.html">CANCIONERO®</a>  |  <a href="./pages/productos.html">MIAFITA</a>  | <a href="./pages/productos.html">VARIOS</a> | <a href="./pages/mayoristas.html">MAYORISTA</a>  | <a href="./pages/contacto.html">CONTACTO</a>  | <a href="./pages/inicsesion.html">INICIAR SESIÓN</a> | <a href="./pages/registro.html">REGISTRARME</a>  | <a href="./pages/carrito.html">CARRITO</a>
+				<p>Tel: 341123123 | Rosario, Santa Fe, Argentina</p>
+				<p>copyright editorial intelectos 2021</p>
+			</section>
+			<address align="center">
+				webpage created by <br>Lvcas			
+			</address> -->
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	</body>
 </html>
