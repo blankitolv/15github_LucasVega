@@ -255,26 +255,6 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   line-height: 20px;
 }
 
-.bkg-container #bkg-image-carrito {
-  background-image: url("../images/carrito-envios8005xx.jpg");
-  background-position: top 20% left 5%;
-  background-size: cover;
-}
-
-.bkg-container #bkg-image-carrito .bkg-texto {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.bkg-container #bkg-image-carrito .bkg-texto p {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ebebeb;
-}
-
 .fixed-whatsapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,6 +1589,26 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 /*********************/
 /* BEGIN CARRITO.HTML*/
 /*********************/
+.bkg-container #bkg-image-carrito {
+  background-image: url("../images/carrito-envios8005xx.jpg");
+  background-position: top 20% left 5%;
+  background-size: cover;
+}
+
+.bkg-container #bkg-image-carrito .bkg-texto {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bkg-container #bkg-image-carrito .bkg-texto p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ebebeb;
+}
+
 #caja-carrito {
   width: 90%;
   height: auto;

@@ -184,19 +184,6 @@ header {
             }
         }
     }     
-    #bkg-image-carrito {
-        background-image: url("../images/carrito-envios8005xx.jpg");
-        background-position:top 20% left 5%;
-        background-size: cover;
-        .bkg-texto {
-            flex-direction: column;
-            p {
-                align-items: center;
-                color: rgb(235, 235, 235);
-            }
-        }
-    }   
-
 }
 .fixed-whatsapp {
     display: flex;
@@ -1194,6 +1181,20 @@ header {
 /*********************/
 /* BEGIN CARRITO.HTML*/
 /*********************/
+.bkg-container {
+    #bkg-image-carrito {
+        background-image: url("../images/carrito-envios8005xx.jpg");
+        background-position:top 20% left 5%;
+        background-size: cover;
+        .bkg-texto {
+            flex-direction: column;
+            p {
+                align-items: center;
+                color: rgb(235, 235, 235);
+            }
+        }
+    }   
+}
 #caja-carrito {
     width: 90%;
     height: auto;
