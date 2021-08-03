@@ -32,11 +32,12 @@ header {
         width: 100%;
         .nav-contain {
             display: flex;
+            flex-direction: row;
             justify-content: space-around;
             align-items: baseline;
             box-sizing: border-box;
             width: 100%;
-            height: 12vh;
+            height: auto;
             background-color: rgb(255, 255, 255);
             img {
                 align-self: center;
@@ -46,11 +47,10 @@ header {
                 display: flex;
                 box-sizing: border-box;
                 align-items: center;
-                flex: 90%;
+                // flex: 100%;
                 justify-content: center;
                 text-transform: uppercase;
                 font-size: 14px;
-                overflow: hidden;
                 li {
                     box-sizing: border-box;
                     padding: 15px 2%;
@@ -136,6 +136,10 @@ header {
                         }
                     }
                 }
+            }
+            @media (max-width:780px) {
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -290,6 +294,16 @@ header {
             .resaltador2 {
                 color: rgb(255, 213, 124);
             }
+            @media (max-width:780px) {
+                h2 {
+                    font-size: 20pt;
+                }
+                p {
+                    letter-spacing: 1px;
+                    font-size: 15pt;
+                    max-width: 80%;
+                }
+            }
         }
     }
     .bkg-container-carousel {
@@ -326,7 +340,7 @@ header {
         .space-user {
             width: 80px;
         }
-
+        
     }
     .send-novedades {
         width: 100%;
