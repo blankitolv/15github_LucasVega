@@ -82,102 +82,37 @@
 				</div>				
 			</div>
 		</div>
-		<main>
-			<div id="caja-carrito">
-				<div id="formulario-carrito">
-					<form action="#" id="formCarrito">
-						<input type="text" name="nombreCompleto" id="nombreCompleto" size="30px" placeholder="Nombre completo">
-						<input type="text" name="empresa" id="empresa" size="30px" placeholder="Nombre del comercio">
-						<input type="tel" name="phone" id="telefono" size="30px" placeholder="Tel/Cel">
-						<input type="email" name="correo" id="correo" size="30px" placeholder="Correo electronico">
-						<input type="text" name="localidad" id="localidad" size="30px" placeholder="Localidad">
-						<input type="text" name="direccion" id="direccion" size="30px" placeholder="Dirección">
-						<input type="submit" name="enviar" value="enviar">
-						<textarea name="notas" id="notas" cols="31" rows="10" placeholder="Añadir aclaraciones"></textarea>
-					</form>
+		<main class="main-carrito">
+			<div class="container-carrito">
+				<div class="textura-carrito"></div>
+				<div class="izquierda-derecha">
+					<div class="izquierda-carrito">
+						<form action="#" id="formCarrito">
+							<input type="text" name="nombreCompleto" id="nombreCompleto" size="30px" placeholder="Nombre completo">
+							<input type="text" name="empresa" id="empresa" size="30px" placeholder="Nombre del comercio">
+							<input type="tel" name="phone" id="telefono" size="30px" placeholder="Tel/Cel">
+							<input type="email" name="correo" id="correo" size="30px" placeholder="Correo electronico">
+							<input type="text" name="localidad" id="localidad" size="30px" placeholder="Localidad">
+							<input type="text" name="direccion" id="direccion" size="30px" placeholder="Dirección">
+							<input type="submit" name="enviar" value="enviar">
+							<textarea name="notas" id="notas" cols="31" rows="10" placeholder="Añadir aclaraciones"></textarea>
+						</form>
+					</div>
+					<div class="derecha-carrito">
+						<div class="header-carrito">
+							<h1> #Mi Carrito</h1>
+							<hr class="hrcarrito">
+							<h2> UPS! Su carrito se encuentra vacío <i class="far fa-meh"></i></h2>
+							<p><a href="../pages/mayoristas.html">Agrege productos a su carrito</a></p>
+						</div>
+	
+					</div>
+
 				</div>
-				<div id="detalle-pedido">
-					<table border="solid 1px black">
-						<th>codigo</th>
-						<th>descipción</th>
-						<th>cantidad</th>
-						<th>acciones</th>
-						<tr>
-							<td>0547821</td>
-							<td>Arjona(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Los Piojos2(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Beatles1(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Beatles2(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Chalchaleros(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Peteco(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Baglietto(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Bersuit2(Cancionero)</td>
-							<td>10</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Bersuit1(Cancionero)</td>
-							<td>20</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Folklore Arg 1(Cancionero)</td>
-							<td>20</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>Los Piojos(Cancionero)</td>
-							<td>30</td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-						<tr>
-							<td>0547821</td>
-							<td>sui generis(Cancionero)</td>
-							<td><input type="text" name="0547821" id="0547821"> </td>
-							<td><a href="#">+modificar</a>/<a href="#">-eliminar</a></td>
-						</tr>
-					</table>
-				</div>
+
 			</div>
 		</main>
+		<!-- </main> -->
 		<footer class="footer"> <!-- --- pie de página--- -->
 			<div class="footer-container"> 
 				<div id="textura-footer"></div>
@@ -223,22 +158,9 @@
 							<li><a href="#">Mayorista</a></li>
 							<li><a href="#">Carrito</a></li>
 						</ul>
-						
-
 					</div>
-					<div></div>
-					<div></div>
 				</div>
 			</div>
-			<!-- <section id="suprafooter">
-				<h6>MAPA DEL SITIO</h6>
-				<a href="./index.html">INICIO</a> | <a href="./pages/productos.html">CANCIONERO®</a>  |  <a href="./pages/productos.html">MIAFITA</a>  | <a href="./pages/productos.html">VARIOS</a> | <a href="./pages/mayoristas.html">MAYORISTA</a>  | <a href="./pages/contacto.html">CONTACTO</a>  | <a href="./pages/inicsesion.html">INICIAR SESIÓN</a> | <a href="./pages/registro.html">REGISTRARME</a>  | <a href="./pages/carrito.html">CARRITO</a>
-				<p>Tel: 341123123 | Rosario, Santa Fe, Argentina</p>
-				<p>copyright editorial intelectos 2021</p>
-			</section>
-			<address align="center">
-				webpage created by <br>Lvcas			
-			</address> -->
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
