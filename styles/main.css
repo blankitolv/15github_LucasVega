@@ -760,6 +760,14 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 /***********************/
 /* BEGIN PRODUCTOS.HTML*/
 /***********************/
+.banner-productos {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/mujer-feliz.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
 .bg-productos {
   background-color: #f1f1ec;
 }
@@ -767,7 +775,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 .bg-productos .site-productos {
   width: 90%;
   height: auto;
-  margin: 10px 75px;
+  padding: 10px 75px;
 }
 
 .bg-productos .site-productos .site-encabezado {
@@ -996,70 +1004,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 }
 
 /* VIEJO TUTO CACA */
-#caja-productos {
-  width: 90%;
-  height: auto;
-  margin-left: 30px;
-  padding: 30px;
-  background: #ecece5;
-  display: inline-block;
-  /* Caja de busqueda de articulos */
-}
-
-#caja-productos #busqueda {
-  width: 20%;
-  height: auto;
-  display: inline-block;
-}
-
-#caja-productos #busqueda h3 {
-  margin-bottom: 15px;
-}
-
-#caja-productos #busqueda input[type=text] {
-  margin: 10px 0px;
-}
-
-#caja-productos #busqueda button {
-  margin: 10px 0px;
-  padding: 10px 20px;
-}
-
-#caja-productos .flex-productos {
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#caja-productos .flex-productos table {
-  padding: 30px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  text-align: center;
-  border-radius: 8px;
-  border-left: #ada687 solid 2px;
-  border-bottom: #ada687 solid 2px;
-  -webkit-box-shadow: -3px 2px 8px #a8a8a8;
-          box-shadow: -3px 2px 8px #a8a8a8;
-}
-
-#caja-productos .flex-productos table img {
-  width: 120%;
-}
-
+/* Caja de busqueda de articulos */
 /***********************/
 /* END PRODUCTOS.HTML*/
 /***********************/
@@ -2403,75 +2348,6 @@ hr {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .productos-novedades {
-    /*hijo de novedades*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .snd-whatsapp {
-    position: fixed;
-    bottom: 2%;
-    right: 10%;
-  }
-  .slider img {
-    width: 100%;
-    height: 30vh;
-  }
-  .novedades {
-    width: 100%;
-    height: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    overflow: hidden;
-  }
-  .producto {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .parrafo-producto {
-    /*hijo de novedades*/
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 100%;
-    padding: 15px,15px,15px,0;
-    margin: 15px;
-  }
-  .parrafo-producto p {
-    font-size: 10pt;
-    letter-spacing: 1px;
-    line-height: 25px;
   }
   .productos-novedades {
     /*hijo de novedades*/
