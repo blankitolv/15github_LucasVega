@@ -812,7 +812,9 @@ header {
                     }
                 }
             }
-
+            @media (max-width:770px) {
+                margin-top: 40px;
+            }
         }
         .footer-derecha {
             margin-right: 150px;
@@ -821,6 +823,7 @@ header {
             .footer-mapa {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 margin-right: 150px;
                 ul{
                     li{
@@ -838,12 +841,24 @@ header {
                                 color:rgb(0, 0, 0);
                                 font-weight: bolder;
                             }
+                            @media (max-width:770px){
+                                &:nth-child(1) {
+                                    color: #009ab3;
+                                }
+                            }
                         }
-                        
                     }
+                }
+                @media (max-width:770px){
+                    margin: 2px 2px;
                 }
             }
 
+        }
+        @media (max-width:770px){
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-top: 60px;
         }
     }
     #textura-footer {
