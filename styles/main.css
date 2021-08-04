@@ -432,7 +432,7 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 .marcas .bkg-container-carousel {
   position: relative;
   width: 100%;
-  height: 60rem;
+  height: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 0, 0, 0.8)), to(rgba(0, 25, 46, 0.8))), url("../images/45-degree-fabric-dark.png");
   background-image: linear-gradient(rgba(20, 0, 0, 0.8), rgba(0, 25, 46, 0.8)), url("../images/45-degree-fabric-dark.png");
 }
@@ -615,6 +615,8 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
   height: 100%;
   background-image: #002fff, url("../images/45-degree-fabric-dark.png");
@@ -636,12 +638,24 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
   text-transform: uppercase;
 }
 
+@media (max-width: 670px) {
+  .marcas .container-nuestras-redes h6 {
+    font-size: 20pt;
+  }
+}
+
 .marcas .container-nuestras-redes p {
   padding-top: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-weight: 600;
+}
+
+@media (max-width: 670px) {
+  .marcas .container-nuestras-redes p {
+    max-width: 350px;
+  }
 }
 
 .marcas .container-nuestras-redes .container-socialMedia {
@@ -731,6 +745,13 @@ header nav .nav-contain ul li:nth-child(8) .icono-menu {
 .marcas .container-nuestras-redes .container-socialMedia .social a:nth-child(4):hover i {
   color: #25D366;
   text-shadow: 0px 0px 5px #1d9b4b;
+}
+
+@media (max-width: 700px) {
+  .marcas .container-nuestras-redes .container-socialMedia .social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 /********************/
