@@ -998,8 +998,6 @@ header nav #check {
   margin-top: 10px;
 }
 
-/* VIEJO TUTO CACA */
-/* Caja de busqueda de articulos */
 /***********************/
 /* END PRODUCTOS.HTML*/
 /***********************/
@@ -1135,7 +1133,6 @@ header nav #check {
 }
 
 .footer .footer-container .footer-derecha {
-  position: relative;
   position: inherit;
   z-index: 20;
 }
@@ -1245,7 +1242,6 @@ header nav #check {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
-  /* box-shadow [x] [y] [radio] [propagación] [color] */
   -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1260,7 +1256,6 @@ header nav #check {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
-  /* box-shadow [x] [y] [radio] [propagación] [color] */
   -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
 }
@@ -2337,21 +2332,6 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .productos-novedades {
-    /*hijo de novedades*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
