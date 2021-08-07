@@ -19,31 +19,50 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-	<!-- open sans -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<!-- Roboto -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-
-		<!-- iconos fuente  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://kit.fontawesome.com/78281c99e8.js" crossorigin="anonymous"></script>
-		<!-- iconos google fuente -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-		<!-- fonts -->	
+	<!-- iconos fuente  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/78281c99e8.js" crossorigin="anonymous"></script>
+	<!-- iconos google fuente -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<!-- /fonts -->	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="./styles/css/bootstrap.css">
 	<!-- fin bootstrap -->
-	<!-- mis estilos  -->
+	<!-- estilos  -->
 	<link rel="stylesheet" href="./styles/main.css">
-	<!-- fin mis estilos  -->
+	<!-- /estilos  -->
 	<!-- shortcut icon  -->
 	<link rel="shortcut icon" href="./images/book-solid.svg" />
-	<!-- fin estilos -->
 
 </head>
 	<body>
 		<header>
+			<div class="supramenu">
+				<ul>
+					<li><a href="./pages/inicsesion.html">Iniciar Sesión</a></li>
+					<li><a href="./pages/registro.html">Registrarse</a></li>
+				</ul>
+			</div>
+			<nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<div class="logo">Editorial Intelectos</div>
+				<ul>
+					<li><a href="./index.html" class="activo">inicio</a></li>
+					<li><a href="./pages/productos.html">productos</a></li>
+					<li><a href="./pages/mayoristas.html">mayorista</a></li>
+					<li><a href="./pages/contacto.html">contacto</a></li>
+					<li><a href="./pages/faqs.html">faqs</a></li>
+				</ul>
+			</nav>
+
+		</header>
+		<!-- <header>
 			<nav>
 				<div class="nav-contain">
 					<img src="./images/logointelectos3.png" alt="Logo intelectos">
@@ -73,7 +92,7 @@
 					</ul>
 				</div>
 			</nav>
-		</header>
+		</header> -->
 		<div class="bkg-container">
 			<div class="bkg-image-index">
 				<div class="bkg-texto">
@@ -103,7 +122,12 @@
 				<div class="container-hero-video">
 					<div class="hero-textura">
 					</div>
-					<video src="./media/0hombre-guitarra_reducido.mp4" muted loop autoplay preload="auto" poster="./images/0hombre-guitarra.png"></video>
+					<video muted loop autoplay preload="auto" poster="./images/0hombre-guitarra.png">
+						<source src="./media/0hombre-guitarra_reducido.mp4" media="min-device-width:1333px">
+						<source src="./media/0hombre-guitarra_reducido1024.mp4" media="min-device-width:1024px">
+						<source src="./media/0hombre-guitarra_reducido800.mp4" media="min-device-width:800px">
+						<source src="./media/0hombre-guitarra_reducido500.mp4" media="min-device-width:500px">
+					</video>
 					<div class="titulo-hero">
 						<h2>CANCIONERO</h2>
 						<p>Desde hace <span class="resaltador">20 años</span> fabricamos los cancioneros más populares del interior del país. Por la exactitud de
@@ -668,7 +692,7 @@
 						<address>
 							<hr>
 							&copy; Blankitolv, LLC. All Rights Reserved. <br>
-							2021 to coderHouse
+							2021 to <span class="span-yellow">coderHouse</span>
 							<hr>
 						</address>
 					</div>
