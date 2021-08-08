@@ -16,6 +16,8 @@ $micianclaro: #0bc1ce;
 $micianoscuro: #34b1c4;
 $break955:955px;
 $break850:850px;
+$break400:400px;
+$break340:340px;
 
 
 /********* BODY **************/
@@ -62,6 +64,7 @@ header {
             line-height: 80px;            
             font-weight: bold;
             display: inline-block;
+            cursor:default;
         }
         ul { 
             float: right;
@@ -168,7 +171,7 @@ header {
     .bkg-image-index {
         width: 100%;
         height: 100vh;
-        background-image: url("../images/backhome.jpg");
+        background-image: url("../images/backhomew.webp");
         background-position:center;
         background-size: cover;
         position: relative;
@@ -182,6 +185,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor:default;
             p {
                 background-color: rgba(0, 0, 0, 0.5);
                 padding: 45px;
@@ -330,6 +334,16 @@ header {
                     max-width: 55em;
                 }
             }
+            @media (min-width:270px) and (max-width:400px) {
+                h2 {
+                    font-size: 16pt;
+                }
+                p {
+                    font-size: 12pt;
+                    letter-spacing: 1px;
+                }
+            }
+
         }
     }
     .bkg-container-carousel {
@@ -366,14 +380,20 @@ header {
         .space-user {
             width: 80px;
         }
-        
+        @media (max-width:400px ){
+            .texto-carousel {
+                h3 {
+                    font-size: 20pt;
+                }
+            }
+        }
     }
     .send-novedades {
         width: 100%;
         height: 30rem;
         position: relative;        
         padding: 1px 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/letters.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/lettersw.webp");
         .container-news {
             width: 100%;
             height: 100%;
@@ -385,16 +405,6 @@ header {
                 color: white;
                 font-weight: bold;
                 letter-spacing: 3px;
-            }
-            .icon-news{
-                color: $blanco;
-                font-weight: 200;
-                font-size: 80pt;
-                &:hover {
-                    color: teal;
-                    font-size: 85pt;
-                    transition: 2s;
-                }
             }
             .content-news {
                 display: flex;
@@ -419,7 +429,6 @@ header {
                     span {
                         text-transform: uppercase;
                         font-size: 20pt;
-
                     }
                 }
                 form {
@@ -449,6 +458,23 @@ header {
                         }
                     }
                 }
+                @media (max-width:$break400) {
+                    h6 {
+                        font-size: 15pt;
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        font-size: 14pt;
+                        span {
+                            font-size: 17pt;
+                        }
+                    }
+                }
+                // @media (max-width:300px) {
+                //     p {
+
+                //     }
+                // }
             }
         }
         @media (max-width:$break955){
@@ -506,7 +532,13 @@ header {
             font-weight: bold;
             text-transform: uppercase;
             @media (max-width:670px) {
-                font-size: 20pt;
+                font-size: 17pt;
+            }
+            @media (max-width:$break400) {
+                font-size: 15pt;
+            }
+            @media (max-width:$break340){
+                font-size: 12pt;
             }
         }
         p {
@@ -515,6 +547,9 @@ header {
             font-weight: 600;
             @media (max-width:670px) {
                 max-width: 350px;
+            }
+            @media (max-width:$break340){
+                padding-left: 5px;
             }
         }
         .container-socialMedia {
@@ -555,6 +590,10 @@ header {
                     // background: rgb(202, 199, 199);
                     z-index: -20;
                     transition: .5s;
+                    @media (max-width:$break850) {
+                        width: 200px;
+                        height: 200px;
+                    }
                 }
                 a:hover:before {
                     transform:translate (-50%,-50%) scale (0);
@@ -726,6 +765,9 @@ header {
                     display: flex;
                     margin: 20px;
                     .productos-unidad {
+                        .card {
+
+                        }
                         display:flex;
                         flex-direction: column;
                         align-items: center;
@@ -838,6 +880,9 @@ header {
                     }
                 }
             }            
+            @media (min-width:200px) {
+                width: 250px;
+            }
         }
         .footer-derecha {
             // margin-right: 150px;
@@ -885,11 +930,11 @@ header {
                 }
             }
         }
-        // @media (max-width:770px){
-        //     flex-direction: column-reverse;
-        //     justify-content: center;
-        //     padding-top: 60px;
-        // }
+        @media (max-width:770px){
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-top: 60px;
+        }
     }
     #textura-footer {
         position: absolute;
@@ -1359,6 +1404,7 @@ header {
                             font-size: 17px;
                             color: rgba(111, 128, 223, 0.788);
                             font-weight: 400;
+                            border-bottom: 1px solid blue;
                         }
                     }
                     .hrcarrito {
@@ -1665,36 +1711,3 @@ $grueso-linea: 100, 200, 300, 400, 500,600,700;
 /***************/
 /* END NESTING */
 /***************/
-
-/* ******************************** fin header */
-/* NOVEDADES / index.html */
-.carro {
-    display: none;
-    padding-top: 20px;
-}
-hr{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-/* querys */
-@media only screen and (min-width:414px) and (max-width:838px) {
-    .novedades {
-        width: 100%;
-        height: 70%;
-        display: flex;
-        justify-content:space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-    // .parrafo-producto {
-    //     width: 90%;
-    //     min-width: auto;
-    // }
-    .producto {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}

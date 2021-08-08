@@ -44,37 +44,37 @@
 </head>
 	<body>
 		<header>
+			<div class="supramenu">
+				<ul>
+					<li><a href="./inicsesion.html">Iniciar Sesión</a></li>
+					<li><a href="./registro.html">Registrarse</a></li>
+				</ul>
+			</div>
 			<nav>
-				<div class="nav-contain">
-					<img src="../images/logointelectos3.png" alt="Logo intelectos">
-					<ul class="ulflex">
-						<li><a href="../index.html">inicio</a></li>
-						<li><a href="../pages/productos.html">productos</a></li>
-						<li><a href="../pages/mayoristas.html">mayorista</a></li>
-						<li><a href="../pages/contacto.html">contacto</a></li>
-						<li><a href="../pages/faqs.html">faqs</a></li>
-						<li>
-							<div class="icono-login">
-								<a href="#"><span class="material-icons-outlined">login</span></a>
-							</div>
-							<div>
-								<a href="../pages/inicsesion.html">Iniciar Sesión</a>
-							</div>
-						</li>
-						<li><a href="../pages/registro.html"><button>Registrarse</button></a></li>
-						<li>
-							<div class="icono-menu">
-								<a href="#"><span class="material-icons-outlined">menu</span></a>
-							</div>
-							<div>
-								<a href="#">MENU</a>
-							</div>
-						</li>
-					</ul>
-				</div>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<div class="logo">Editorial Intelectos</div>
+				<ul>
+					<li><a href="./index.html" class="activo">inicio</a></li>
+					<li><a href="./productos.html">productos</a></li>
+					<li><a href="./mayoristas.html">mayorista</a></li>
+					<li><a href="./contacto.html">contacto</a></li>
+					<li><a href="./faqs.html">faqs</a></li>
+				</ul>
 			</nav>
 		</header>
 		<!-- ----- fin cabecera----- -->
+		<!-- carrito de compras -->
+		<section>
+			<article class="carro" style="display: none;">
+				<a href="./carrito.html"><img src="../images/carrito.png" alt="logo carrito compras" width="35" height="35"> <br> ver carrito</a>
+			</article>	
+		</section>
+		<!-- fin carrito de compras -->		
+		
+
 		<!-- botón MANDANOS UN WHATSAPP -->	
 		<section class="fixed-whatsapp">
 			<a href="https://wa.me/+5493413391348/?text=¡Hola Editorial Intelectos quería preguntar sobre..." target="_blank"><i class="fab fa-whatsapp"></i></a>
