@@ -409,9 +409,24 @@ header nav #check {
   height: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 20, 0.8)), to(rgba(0, 25, 46, 0.8))), url("../images/45-degree-fabric-dark.png");
   background-image: linear-gradient(rgba(0, 5, 20, 0.8), rgba(0, 25, 46, 0.8)), url("../images/45-degree-fabric-dark.png");
+  z-index: 10;
+}
+
+.marcas .bkg-container-carousel .textura-carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: url("../images/cubes.png");
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: 11;
 }
 
 .marcas .bkg-container-carousel .texto-carousel {
+  position: relative;
+  z-index: 12;
   padding-top: 100px;
   margin-left: 50px;
   display: -webkit-box;
@@ -444,21 +459,31 @@ header nav #check {
   padding-top: 30px;
 }
 
-.marcas .bkg-container-carousel .carousel-indicators {
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  z-index: 88;
-}
-
-.marcas .bkg-container-carousel .space-user {
-  width: 80px;
-}
-
 @media (max-width: 400px) {
   .marcas .bkg-container-carousel .texto-carousel h3 {
     font-size: 20pt;
   }
+}
+
+.marcas .bkg-container-carousel .carousel {
+  position: relative;
+  z-index: 70;
+}
+
+.marcas .bkg-container-carousel .carousel .carousel-control-next {
+  z-index: 0;
+}
+
+.marcas .bkg-container-carousel .carousel .carousel-control-next .span {
+  z-index: 0;
+}
+
+.marcas .bkg-container-carousel .carousel .carousel-control-prev {
+  z-index: 0;
+}
+
+.marcas .bkg-container-carousel .carousel .carousel-control-prev .span {
+  z-index: 0;
 }
 
 .marcas .send-novedades {
@@ -793,6 +818,7 @@ header nav #check {
 }
 
 .carousel-item .card {
+  z-index: 70;
   -webkit-transition: all .7s ease-out;
   transition: all .7s ease-out;
 }
