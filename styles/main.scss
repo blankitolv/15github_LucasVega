@@ -3,7 +3,9 @@
     padding:0px;
     font-family: 'Roboto', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth !important;
+}
 /******************/
 /* VARIABLES SASS */
 /******************/
