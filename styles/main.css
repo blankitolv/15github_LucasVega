@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.invisible {
+  display: none;
+}
+
 /******************/
 /* VARIABLES SASS */
 /******************/
@@ -24,6 +28,57 @@ body a {
 
 body ul {
   list-style-type: none;
+}
+
+body .fixed-carrito {
+  position: fixed;
+  top: 22%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  z-index: 40;
+}
+
+body .fixed-carrito .bkg-carrito {
+  width: 100%;
+  height: 100%;
+  background-color: #0bc1cece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -webkit-box-shadow: -2px 0px 15px 1px black;
+          box-shadow: -2px 0px 15px 1px black;
+}
+
+body .fixed-carrito .bkg-carrito .icon-carrito {
+  text-decoration: none;
+  color: white;
+  line-height: 10px;
+}
+
+body .fixed-carrito .bkg-carrito .icon-carrito a {
+  color: black;
+}
+
+body .fixed-carrito .bkg-carrito .icon-carrito a span {
+  font-size: 20pt;
+  font-weight: 500;
+  padding: 8px;
+}
+
+body .fixed-carrito .bkg-carrito .icon-carrito:hover a span {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #fafafa;
 }
 
 /************* header **************/
@@ -863,11 +918,25 @@ header nav #check {
 }
 
 .bg-productos {
-  background-color: #f1f1ec;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #71b9be;
+}
+
+.bg-productos .textura-productos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url("../images/cubes.png"), url("../images/45-degree-fabric-dark.png");
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
 }
 
 .bg-productos .site-productos {
-  width: 90%;
+  position: relative;
   height: auto;
   padding: 10px 75px;
 }
@@ -884,6 +953,7 @@ header nav #check {
 }
 
 .bg-productos .site-productos .site-encabezado h1 {
+  margin-top: 4%;
   font-size: 20pt;
   font-weight: bold;
 }
@@ -917,6 +987,8 @@ header nav #check {
 }
 
 .bg-productos .site-productos .ordena-producto select {
+  position: relative;
+  z-index: 25;
   font-family: roboto, sans-serif;
   font-size: 18px;
   padding: 5px 7px;
@@ -962,7 +1034,7 @@ header nav #check {
 .bg-productos .site-productos .content-busca-productos .busca-y-filtro {
   width: 350px;
   height: auto;
-  background-color: whitesmoke;
+  background-color: rgba(241, 241, 241, 0.705);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,6 +1042,7 @@ header nav #check {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 800px) {
@@ -1099,8 +1172,24 @@ header nav #check {
   margin-top: 10px;
 }
 
-.bg-productos .site-productos .content-busca-productos .content-productos .productos .productos-unidad p {
+.bg-productos .site-productos .content-busca-productos .content-productos .productos .productos-unidad .card-body h5 {
+  letter-spacing: 1px;
+  text-align: center;
+  color: #d1d1d1;
+}
+
+.bg-productos .site-productos .content-busca-productos .content-productos .productos .productos-unidad .card-body p {
+  color: white;
   margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.bg-productos .site-productos .content-busca-productos .content-productos .productos .productos-unidad .card-body .leermas {
+  color: black;
+}
+
+.bg-productos .site-productos .content-busca-productos .content-productos .productos .productos-unidad .card-body .leermas:hover {
+  color: #505050;
 }
 
 /***********************/
@@ -1168,16 +1257,20 @@ header nav #check {
 .footer .footer-container .footer-izquierda .footer-logo {
   width: 147px;
   height: 58px;
-  background-image: url("../images/logo_blanco.png");
   background-position: center;
   background-size: cover;
 }
 
+.footer .footer-container .footer-izquierda .footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+
 .footer .footer-container .footer-izquierda .footer-address address {
   color: black;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 30px;
-  font-size: 8pt;
+  font-size: 9pt;
 }
 
 .footer .footer-container .footer-izquierda .footer-address address .span-yellow {
@@ -1206,7 +1299,6 @@ header nav #check {
 }
 
 .footer .footer-container .footer-izquierda .footer-social ul li {
-  color: #b30000;
   display: inline-block;
   margin: 0 15px;
   width: 50px;
@@ -1440,60 +1532,167 @@ header nav #check {
 /************************/
 /* BEGIN INICSESION.HTML*/
 /************************/
-#flex-formulario-login {
-  z-index: 10;
+main {
+  width: 100%;
+}
+
+main .imagen-y-login {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: gray;
+}
+
+main .imagen-y-login .container-login {
+  width: inherit;
+  height: inherit;
+}
+
+main .imagen-y-login .container-login .bkg-login {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 540px) {
+  main .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw539-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 537px) and (max-width: 767px) {
+  main .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw767-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1083px) {
+  main .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw1083-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1083px) {
+  main .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw1399-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+main .imagen-y-login .container-login .textos-login {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+main .imagen-y-login .container-login .textos-login .titulo-login h1 {
+  color: white;
+  line-height: 28px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+main .imagen-y-login .container-login .textos-login .subtitulo-login h2 {
+  color: white;
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 14pt;
+  font-weight: 200;
+  max-width: 500px;
+  margin-right: 5px;
+}
+
+main .imagen-y-login .container-login .textos-login .hipertextos-login {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#flex-formulario-login #form-login-izquierda {
-  width: 40%;
-  height: 102vh;
-  margin: 3px solid white;
-  background-color: #414141;
+main .imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic {
+  margin-top: 20px;
 }
 
-#flex-formulario-login #form-login-izquierda #login-h1 {
-  border-left: 5px solid lightblue;
-  font-size: 20pt;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  z-index: 2;
-  color: lightskyblue;
+main .imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic a {
+  color: black;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 5px 8px;
+  background-color: #0fe1f0;
 }
 
-#flex-formulario-login #form-login-izquierda #usuario, #flex-formulario-login #form-login-izquierda #contrasena, #flex-formulario-login #form-login-izquierda #enviar {
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  width: 50%;
-  height: 3em;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+main .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
+  color: white;
 }
 
-#flex-formulario-login #form-login-izquierda #enviar {
-  background-color: #aecee2;
-  border: 1px lightslategray;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13pt;
+@media screen and (max-width: 766px) {
+  main .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 500;
+  }
 }
 
-#flex-formulario-login #form-login-izquierda #enviar:hover {
-  background-color: #6fc8ff;
-  border: 4px solid #6ecbf0;
-  cursor: pointer;
+@media (max-width: 540px) {
+  main .imagen-y-login .container-login .bkg-login {
+    display: inline;
+  }
+  main .imagen-y-login .container-login .textos-login {
+    position: relative;
+  }
 }
 
-#flex-formulario-login #form-login-izquierda #formulario {
+main .container-form {
+  position: relative;
+  width: 100%;
+  height: 103vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #c9fdff;
+  background: -webkit-gradient(linear, left top, right top, from(#c9fdff), color-stop(50%, #d5ffe1), to(#d2d3ff));
+  background: linear-gradient(90deg, #c9fdff 0%, #d5ffe1 50%, #d2d3ff 100%);
+}
+
+main .container-form .container-form-login {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background: white;
+  padding: 0px 20px;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
+}
+
+main .container-form .container-form-login #formulario-login {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1501,47 +1700,57 @@ header nav #check {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#flex-formulario-login #form-login-izquierda #formulario label {
-  font: 16pt "typewriter", sans-serif;
+main .container-form .container-form-login #formulario-login ::-webkit-input-placeholder {
+  padding-left: 10px;
 }
 
-#flex-formulario-login #form-login-izquierda #login-registrate {
-  text-align: center;
-  margin-top: 90px;
+main .container-form .container-form-login #formulario-login :-ms-input-placeholder {
+  padding-left: 10px;
 }
 
-#flex-formulario-login #form-login-izquierda #login-registrate a {
-  text-decoration: none;
-  letter-spacing: 1px;
+main .container-form .container-form-login #formulario-login ::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+main .container-form .container-form-login #formulario-login ::placeholder {
+  padding-left: 10px;
+}
+
+main .container-form .container-form-login #formulario-login input {
+  outline: 0;
+  border-width: 0 0 1px;
+}
+
+main .container-form .container-form-login #formulario-login input:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #efffff;
+}
+
+main .container-form .container-form-login #formulario-login #enviar {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 4px 18px;
+  border: none;
+  background-color: #0bc1ce;
   color: white;
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-#flex-formulario-login #form-login-izquierda #login-registrate a:hover {
-  background-color: #855c48;
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
+main .container-form .container-form-login #formulario-login #olvidaste {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-#flex-formulario-login #image-login-derecha {
-  width: 60%;
-  height: 102vh;
-  background-image: url("../images/libraryp.png");
-  background-position: right;
-  background-size: cover;
+main .container-form .container-form-login #formulario-login #olvidaste a {
+  color: #34b1c4;
+  font-size: 10pt;
 }
 
 /**********************/
