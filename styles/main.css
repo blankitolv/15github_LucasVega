@@ -131,7 +131,7 @@ header nav .logo a {
   color: white;
   line-height: 80px;
   font-weight: bold;
-  cursor: default;
+  cursor: pointer;
 }
 
 header nav ul {
@@ -953,6 +953,8 @@ header nav #check {
 }
 
 .bg-productos .site-productos .site-encabezado h1 {
+  color: white;
+  letter-spacing: 1px;
   margin-top: 4%;
   font-size: 20pt;
   font-weight: bold;
@@ -1498,57 +1500,143 @@ header nav #check {
 /* END REGISTRO.HTML*/
 /********************/
 /**********************/
-/* BEGIN REGISTRO.HTML*/
+/* BEGIN mayorista.HTML*/
 /**********************/
-#listaProductos table {
-  height: 400px;
-  width: 70%;
-  margin-top: 90px;
-  margin-left: 300px;
-  margin-bottom: 100px;
-}
-
-#listaProductos table td:nth-child(5) {
-  width: 200px;
-}
-
-#listaProductos table img {
+.main-mayorista {
   width: 100%;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  position: relative;
+  background-color: black;
+  background-image: url("../images/cubes.png");
+  padding: 1px 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#listaProductos table img:hover {
-  width: 130%;
+.main-mayorista .titulos-mayorista {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#listaProductos table tr td {
-  padding: 40px;
+.main-mayorista .titulos-mayorista h1 {
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 5px 7px;
+  margin: 30px 10px 20px 0px;
+  color: white;
+  font-size: 25pt;
+}
+
+.main-mayorista .titulos-mayorista h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px 14px;
+  margin: 15px 10px;
+  color: #ececec;
+  font-size: 13pt;
+  max-width: 60%;
+}
+
+.main-mayorista .titulos-mayorista hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.897);
+}
+
+.main-mayorista .tabla {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 90%;
+  border: 1px solid black;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
+}
+
+.main-mayorista .tabla caption {
+  color: #e7e7e7;
+  letter-spacing: 1px;
+}
+
+.main-mayorista .tabla tbody tr td {
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+.main-mayorista .tabla tbody tr td label input[type=number] {
+  width: 45px;
+}
+
+.main-mayorista .tabla tbody .tr-titulo {
+  text-align: center;
+}
+
+.main-mayorista .tabla tbody .tr-titulo td {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18pt;
+  padding: 20px 0px;
+}
+
+.main-mayorista .siguiente-mayorista {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+
+.main-mayorista .siguiente-mayorista a {
+  padding: 10px 17px;
+  color: white;
+  background-color: #34b1c4;
+  font-weight: 400;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-mayorista .siguiente-mayorista a:hover {
+  -webkit-transition: .9s;
+  transition: .9s;
+  background-color: #0fe1f0;
+  color: black;
 }
 
 /********************/
-/* END REGISTRO.HTML*/
+/* END mayorista.HTML*/
 /********************/
 /************************/
 /* BEGIN INICSESION.HTML*/
 /************************/
-main {
-  width: 100%;
-}
-
-main .imagen-y-login {
+.imagen-y-login {
   position: relative;
   width: 100%;
   height: 70vh;
   background-color: gray;
 }
 
-main .imagen-y-login .container-login {
+.imagen-y-login .container-login {
   width: inherit;
   height: inherit;
 }
 
-main .imagen-y-login .container-login .bkg-login {
+.imagen-y-login .container-login .bkg-login {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -1558,7 +1646,7 @@ main .imagen-y-login .container-login .bkg-login {
 }
 
 @media (max-width: 540px) {
-  main .imagen-y-login .container-login .bkg-login {
+  .imagen-y-login .container-login .bkg-login {
     background-image: url("../images/minw539-2.jpg");
     background-size: cover;
     background-position: center;
@@ -1567,7 +1655,7 @@ main .imagen-y-login .container-login .bkg-login {
 }
 
 @media screen and (min-width: 537px) and (max-width: 767px) {
-  main .imagen-y-login .container-login .bkg-login {
+  .imagen-y-login .container-login .bkg-login {
     background-image: url("../images/minw767-2.jpg");
     background-size: cover;
     background-position: center;
@@ -1576,7 +1664,7 @@ main .imagen-y-login .container-login .bkg-login {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1083px) {
-  main .imagen-y-login .container-login .bkg-login {
+  .imagen-y-login .container-login .bkg-login {
     background-image: url("../images/minw1083-2.jpg");
     background-size: cover;
     background-position: center;
@@ -1585,7 +1673,7 @@ main .imagen-y-login .container-login .bkg-login {
 }
 
 @media screen and (min-width: 1083px) {
-  main .imagen-y-login .container-login .bkg-login {
+  .imagen-y-login .container-login .bkg-login {
     background-image: url("../images/minw1399-1.jpg");
     background-size: cover;
     background-position: center;
@@ -1593,7 +1681,7 @@ main .imagen-y-login .container-login .bkg-login {
   }
 }
 
-main .imagen-y-login .container-login .textos-login {
+.imagen-y-login .container-login .textos-login {
   position: absolute;
   top: 40%;
   left: 5%;
@@ -1601,7 +1689,7 @@ main .imagen-y-login .container-login .textos-login {
   margin-right: 30px;
 }
 
-main .imagen-y-login .container-login .textos-login .titulo-login h1 {
+.imagen-y-login .container-login .textos-login .titulo-login h1 {
   color: white;
   line-height: 28px;
   font-size: 1.5rem;
@@ -1609,7 +1697,7 @@ main .imagen-y-login .container-login .textos-login .titulo-login h1 {
   margin-right: 10px;
 }
 
-main .imagen-y-login .container-login .textos-login .subtitulo-login h2 {
+.imagen-y-login .container-login .textos-login .subtitulo-login h2 {
   color: white;
   padding-top: 10px;
   line-height: 25px;
@@ -1619,7 +1707,7 @@ main .imagen-y-login .container-login .textos-login .subtitulo-login h2 {
   margin-right: 5px;
 }
 
-main .imagen-y-login .container-login .textos-login .hipertextos-login {
+.imagen-y-login .container-login .textos-login .hipertextos-login {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1633,11 +1721,11 @@ main .imagen-y-login .container-login .textos-login .hipertextos-login {
       justify-content: space-around;
 }
 
-main .imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic {
+.imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic {
   margin-top: 20px;
 }
 
-main .imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic a {
+.imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic a {
   color: black;
   font-weight: 400;
   line-height: 20px;
@@ -1645,12 +1733,12 @@ main .imagen-y-login .container-login .textos-login .hipertextos-login .btn-inic
   background-color: #0fe1f0;
 }
 
-main .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
+.imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
   color: white;
 }
 
 @media screen and (max-width: 766px) {
-  main .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
+  .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px black;
     font-weight: 500;
@@ -1658,15 +1746,15 @@ main .imagen-y-login .container-login .textos-login .hipertextos-login .link-cre
 }
 
 @media (max-width: 540px) {
-  main .imagen-y-login .container-login .bkg-login {
+  .imagen-y-login .container-login .bkg-login {
     display: inline;
   }
-  main .imagen-y-login .container-login .textos-login {
+  .imagen-y-login .container-login .textos-login {
     position: relative;
   }
 }
 
-main .container-form {
+.container-form {
   position: relative;
   width: 100%;
   height: 103vh;
@@ -1678,7 +1766,7 @@ main .container-form {
   background: linear-gradient(90deg, #c9fdff 0%, #d5ffe1 50%, #d2d3ff 100%);
 }
 
-main .container-form .container-form-login {
+.container-form .container-form-login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1691,7 +1779,7 @@ main .container-form .container-form-login {
           box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
 }
 
-main .container-form .container-form-login #formulario-login {
+.container-form .container-form-login #formulario-login {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1705,34 +1793,34 @@ main .container-form .container-form-login #formulario-login {
           justify-content: space-evenly;
 }
 
-main .container-form .container-form-login #formulario-login ::-webkit-input-placeholder {
+.container-form .container-form-login #formulario-login ::-webkit-input-placeholder {
   padding-left: 10px;
 }
 
-main .container-form .container-form-login #formulario-login :-ms-input-placeholder {
+.container-form .container-form-login #formulario-login :-ms-input-placeholder {
   padding-left: 10px;
 }
 
-main .container-form .container-form-login #formulario-login ::-ms-input-placeholder {
+.container-form .container-form-login #formulario-login ::-ms-input-placeholder {
   padding-left: 10px;
 }
 
-main .container-form .container-form-login #formulario-login ::placeholder {
+.container-form .container-form-login #formulario-login ::placeholder {
   padding-left: 10px;
 }
 
-main .container-form .container-form-login #formulario-login input {
+.container-form .container-form-login #formulario-login input {
   outline: 0;
   border-width: 0 0 1px;
 }
 
-main .container-form .container-form-login #formulario-login input:focus {
+.container-form .container-form-login #formulario-login input:focus {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: #efffff;
 }
 
-main .container-form .container-form-login #formulario-login #enviar {
+.container-form .container-form-login #formulario-login #enviar {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 4px 18px;
@@ -1742,13 +1830,13 @@ main .container-form .container-form-login #formulario-login #enviar {
   text-transform: capitalize;
 }
 
-main .container-form .container-form-login #formulario-login #olvidaste {
+.container-form .container-form-login #formulario-login #olvidaste {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-main .container-form .container-form-login #formulario-login #olvidaste a {
+.container-form .container-form-login #formulario-login #olvidaste a {
   color: #34b1c4;
   font-size: 10pt;
 }
@@ -2073,6 +2161,7 @@ main .container-form .container-form-login #formulario-login #olvidaste a {
 }
 
 .main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito input[type=text], .main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito input[type=tel], .main-carrito .container-carrito .izquierda-derecha .izquierda-carrito #formCarrito input[type=email] {
+  color: white;
   width: 350px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.247);

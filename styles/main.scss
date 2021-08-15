@@ -117,7 +117,7 @@ header {
                 color:white;            
                 line-height: 80px;            
                 font-weight: bold;
-                cursor:default;
+                cursor:pointer;
             }
         }
         ul { 
@@ -748,6 +748,8 @@ header {
             line-height: 33px;
             padding: 8px;
             h1 {
+                color:white;
+                letter-spacing: 1px;
                 margin-top:4%;
                 font-size: 20pt;
                 font-weight: bold;
@@ -1134,40 +1136,126 @@ header {
 /* END REGISTRO.HTML*/
 /********************/
 /**********************/
-/* BEGIN REGISTRO.HTML*/
+/* BEGIN mayorista.HTML*/
 /**********************/
-#listaProductos {
-    table {
-        height: 400px;
-        width: 70%;
-        margin-top: 90px;
-        margin-left: 300px;
-        margin-bottom: 100px;
-        td:nth-child(5){
-            width: 200px;
+.main-mayorista {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    background-image:url("../images/cubes.png");
+    padding: 1px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulos-mayorista {
+        width: 80%;
+        display: flex;
+        flex-direction:column;
+        h1 {
+            text-transform: uppercase;
+            align-self: flex-start;
+            padding: 5px 7px;
+            margin: 30px 10px 20px 0px;
+            color:white;
+            font-size: 25pt;
         }
-        img{
-            width: 100%;
-            transition: width 1s;
+        h2 {
+            align-self: center;
+            padding: 10px 14px;
+            margin: 15px 10px;
+            color:#ececec;
+            font-size: 13pt;
+            max-width: 60%;
         }
-        img:hover {
-            width: 130%;
+        hr {
+            border-top: 2px solid rgba(255, 255, 255, 0.897);
         }
-        tr {
-            td{
-                padding:40px;
+    }
+    .tabla {
+        cursor:default;
+        user-select: none;
+        width: 90%;
+        border: 1px solid black;
+        margin: 20px auto;
+        box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.56);
+        caption {
+            color: rgb(231, 231, 231);
+            letter-spacing: 1px;
+        }
+        tbody {
+            tr {
+                td {
+                    font-family: monospace;
+                    text-transform: capitalize;
+                    label {
+                        input[type=number]{
+                            width: 45px;
+                        }
+                    }
+                }
+            }
+            .tr-titulo {
+                text-align: center;
+                td {
+                    font-family: 'Roboto', sans-serif;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    font-size: 18pt;
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+    .siguiente-mayorista {
+        align-self: flex-end;
+        margin-right:30px;
+        margin-bottom: 5px;
+        a {
+            padding: 10px 17px;
+            color: white;
+            background-color: $micianoscuro;
+            font-weight: 400;
+            transition: .5s;
+            &:hover {
+                transition: .9s;
+                background-color: $micianmasclaro;
+                color: black;
             }
         }
     }
 }
+// #listaProductos {
+//     table {
+//         height: 400px;
+//         width: 70%;
+//         margin-top: 90px;
+//         margin-left: 300px;
+//         margin-bottom: 100px;
+//         td:nth-child(5){
+//             width: 200px;
+//         }
+//         img{
+//             width: 100%;
+//             transition: width 1s;
+//         }
+//         img:hover {
+//             width: 130%;
+//         }
+//         tr {
+//             td{
+//                 padding:40px;
+//             }
+//         }
+//     }
+// }
 /********************/
-/* END REGISTRO.HTML*/
+/* END mayorista.HTML*/
 /********************/
 /************************/
 /* BEGIN INICSESION.HTML*/
 /************************/
-main{
-    width: 100%;
+// main{
+//     width: 100%;
     .imagen-y-login {
         position: relative;
         width: 100%;
@@ -1324,88 +1412,8 @@ main{
             }
         }
     }
-}
-
-// #flex-formulario-login {
-//     z-index: 10;
-//     display: flex;
-//     #form-login-izquierda {
-//         width: 40%;
-//         height: 102vh;
-//         margin: 3px solid white;
-//         background-color: rgb(65, 65, 65);
-//         #login-h1 {
-//             border-left: 5px solid lightblue;
-//             font-size: 20pt;
-//             text-transform: uppercase;
-//             text-align: center;
-//             margin-top: 90px;
-//             margin-bottom: 15px;
-//             margin-left: 5px;
-//             z-index: 2;
-//             color: lightskyblue;
-//         }
-//         #usuario,#contrasena,#enviar {
-//             text-align: left;
-//             text-transform: uppercase;
-//             letter-spacing: 1px;
-//             margin-top: 5px;
-//             margin-bottom: 15px;
-//             width: 50%;
-//             height: 3em;
-//             border-radius: 5px;
-//             font-family: 'Roboto', sans-serif;
-//         }
-//         #enviar {
-//             background-color: rgb(174, 206, 226);
-//             border: 1px lightslategray;
-//             text-align: center;
-//             text-transform: uppercase;
-//             font-weight: bold;
-//             font-size: 13pt;
-//         }
-//         #enviar:hover {
-//             background-color: rgb(111, 200, 255);
-//             border: 4px solid rgb(110,203,240);
-//             cursor:pointer;
-//         }
-//         #formulario {
-//             display: flex;
-//             flex-direction: column;
-//             flex-wrap: nowrap;
-//             justify-content:space-between;
-//             align-items: center;
-//             label {
-//                 font : 16pt "typewriter", sans-serif;
-//             }
-//         }
-//         #login-registrate {
-//             text-align: center;
-//             margin-top: 90px;
-//             a {
-//                 text-decoration: none;
-//                 letter-spacing: 1px;
-//                 color: white;
-//                 border: 2px solid white;
-//                 border-radius: 20px;
-//                 padding: 10px;
-//                 text-transform: uppercase;
-//             }
-//             a:hover{
-//                 background-color: rgb(133, 92, 72);
-//                 transition: 0.7s ease-in-out;
-            
-//             }
-//         }        
-//     }
-//     #image-login-derecha {
-//         width: 60%;
-//         height: 102vh;
-//         background-image: url("../images/libraryp.png");
-//         background-position: right;
-//         background-size: cover;
-//     }
 // }
+
 /**********************/
 /* END INICSESION.HTML*/
 /**********************/
@@ -1634,6 +1642,7 @@ main{
                         margin-top: 20px;
                     }
                     input[type=text],input[type=tel],input[type=email] {
+                        color:white;
                         width: 350px;
                         border-radius: 5px;
                         background-color: rgba(0, 0, 0, 0.247);
