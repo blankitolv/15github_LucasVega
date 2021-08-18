@@ -1502,72 +1502,274 @@ header nav #check {
 /**********************/
 /* BEGIN REGISTRO.HTML*/
 /**********************/
-#backRegistro {
+.main-registro {
+  padding: 1px;
   width: 100%;
-  height: 800px;
-  background-image: url("../images/registroback.png");
-  background-size: 100% 100%;
+  background: #c9fdff;
+  background: -webkit-gradient(linear, left top, right top, from(#c9fdff), color-stop(50%, #d5ffe1), to(#d2d3ff));
+  background: linear-gradient(90deg, #c9fdff 0%, #d5ffe1 50%, #d2d3ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#backRegistro #registro article {
-  width: 100%;
-  height: 80vh;
+.main-registro .registro {
+  width: 500px;
+  height: auto;
+  margin: 150px auto;
 }
 
-#backRegistro #registro .caja {
+.main-registro .registro .cabeza-registro {
+  font-family: sans-serif;
+  margin-bottom: 25px;
+}
+
+.main-registro .registro .cabeza-registro h1 {
+  font-size: 22pt;
+  line-height: 30px;
+  font-weight: 700;
+  color: #002d38;
+}
+
+.main-registro .registro .cabeza-registro h1 span {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #0025cc;
+}
+
+.main-registro .registro .caja-registro {
+  margin-top: 15px;
+  padding: 1px;
+  width: 100%;
+  height: auto;
   background-color: white;
-  opacity: 0.9;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.56);
 }
 
-#backRegistro #registro .formulario {
-  width: 40%;
-  height: 400px;
-  margin-left: 450px;
-  padding: 15px;
+.main-registro .registro .caja-registro .registro-inicsesion {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#backRegistro #registro .formulario select {
-  width: 95%;
-  margin: 15px 0;
-  padding: 6px;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 18px;
-  -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+.main-registro .registro .caja-registro .registro-inicsesion h2 {
+  color: #6b6b6b;
+  font-size: 12pt;
+  line-height: 20px;
+  font-weight: 600;
 }
 
-#backRegistro #registro .formulario input[type=text], #backRegistro #registro .formulario input[type=password], #backRegistro #registro .formulario input[type=email] {
-  width: 95%;
-  margin: 15px 0;
-  padding: 6px;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 18px;
-  -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
-}
-
-#backRegistro #registro .formulario input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-#backRegistro #registro .formulario input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
+.main-registro .registro .caja-registro .registro-inicsesion .btn-registro {
+  text-align: center;
+  padding: 18px 30px;
+  margin: 10px auto 20px;
+  width: 70%;
+  background-color: #003391;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  font-weight: 500;
+  letter-spacing: 1px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 20px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.main-registro .registro .caja-registro .registro-inicsesion .btn-registro:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: black;
+  background-color: #4e8cff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.main-registro .registro .caja-registro .separador {
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.main-registro .registro .caja-registro .separador hr {
+  border-top: 1px solid black;
+  width: 40%;
+}
+
+.main-registro .registro .caja-registro .registro-formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta label {
+  margin-top: 15px;
+  font-size: 9pt;
+  color: gray;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=text], .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=password], .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=date], .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=email], .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #select-provincia {
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+  line-height: 30px;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=text]::-webkit-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=password]::-webkit-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=email]::-webkit-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=date] {
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=text]:-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=password]:-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=email]:-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=date] {
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=text]::-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=password]::-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=email]::-ms-input-placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=date] {
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=text]::placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=password]::placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=email]::placeholder, .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta input[type=date] {
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #select-provincia {
+  padding: 4px;
+  width: 200px;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #select-provincia .select-item {
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #correo {
+  width: 435px;
+}
+
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .main-registro .registro .caja-registro .registro-formulario .linea {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #correo {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 420px) {
+  .main-registro .registro .caja-registro .registro-formulario .linea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #correo {
+    width: 190px;
+  }
+}
+
+.main-registro .registro .caja-registro .registro-formulario .centrado {
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
+  margin-right: 7px;
+}
+
+.main-registro .registro .caja-registro #submit-registro {
+  padding: 18px 30px;
+  margin: 10px auto 20px;
+  width: 70%;
+  background-color: #30a3b4;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main-registro .registro .caja-registro #submit-registro:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: #0fe1f0;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-registro .registro {
+    width: auto;
+    padding: 2px 7px;
+  }
 }
 
 /********************/

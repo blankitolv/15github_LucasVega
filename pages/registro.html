@@ -8,13 +8,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Registrate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- SEO -->
 	<!-- PALABRAS CLAVES 4-->
 	<meta name="keywords" content="registro, registrar intelectos, editorial mayorista, editorial intelectos">
 	<!-- caracteres description 78 -->
 	<meta name="desciption" content="Con el afán de seguir el estado de tu pedido y tu historico puedes registrarte">
 	<!--   FIN SEO   -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- fonts -->
 	<script src="https://kit.fontawesome.com/78281c99e8.js" crossorigin="anonymous"></script>
 	<!-- bootstrap -->
@@ -58,8 +58,100 @@
 				</ul>
 			</nav>
 		</header>
-		<!-- ----- fin cabecera----- -->
-		<main>
+		<!-- fin cabecera -->
+		<main class="main-registro">
+			<section class="registro">
+				<div class="cabeza-registro" style="display: none;">
+					<h1>Formulario de registro <span>Intelectos</span></h1>
+				</div>
+				<div class="caja-registro">
+					<div class="registro-inicsesion">
+						<h2>Ya tiene una cuenta?</h2>
+						<a class="btn-registro" href="./inicsesion.html#container-form">Continúe a iniciar sesión</a>
+					</div>
+					<div class="separador">
+						<hr class="hr-separador">
+						<p>sino</p>
+						<hr>
+					</div>
+					<form action="../index.html">
+						<div class="registro-formulario">
+							<div class="linea">
+								<div class="columna-etiqueta">
+									<label class="etiqueta" for="name">Nombre</label>
+									<input type="text" id="name" placeholder="Nombre">
+								</div>
+								<div class="columna-etiqueta">
+									<label class="etiqueta" for="apellido">Apellido</label>
+									<input type="text" id="apellido" placeholder="Apellido">
+								</div>
+							</div>
+							<div class="linea">
+								<div class="columna-etiqueta">
+									<label class="etiqueta" for="correo">Email</label>
+									<input type="email" id="correo" placeholder="Ingrese su correo electronico" required>
+								</div>
+							</div>
+							<div class="linea">
+								<div class="columna-etiqueta">
+									<label class="etiqueta">Contraseña</label>
+									<input type="password" placeholder="Ingrese su contraseña" required>
+								</div>
+								<div class="columna-etiqueta">
+									<label class="etiqueta">Confirme contraseña</label>
+									<input type="password" placeholder="Confirme su contraseña" required>
+								</div>
+							</div>
+							<div class="linea">
+								<div class="columna-etiqueta">
+									<label for="fecha-nacimiento">Fecha de nacimiento</label>
+									<input type="date" id="fecha-nacimiento" required>
+								</div>
+								<div class="columna-etiqueta">
+									<label class="etiqueta">Provincia</label>
+									<select name="provincia" id="select-provincia" required>
+										<option class="select-item" value="0">Buenos Aires</option>
+										<option class="select-item" value="1">Catamarca</option>
+										<option class="select-item" value="2">Chaco</option>
+										<option class="select-item" value="3">Chubut</option>
+										<option class="select-item" value="4">Córdoba</option>
+										<option class="select-item" value="5">Corrientes</option>
+										<option class="select-item" value="6">Entre Ríos</option>
+										<option class="select-item" value="7">Formosa</option>
+										<option class="select-item" value="8">Jujuy</option>
+										<option class="select-item" value="9">La Pampa</option>
+										<option class="select-item" value="10">La Rioja</option>
+										<option class="select-item" value="11">Mendoza</option>
+										<option class="select-item" value="12">Misiones</option>
+										<option class="select-item" value="13">Neuquén</option>
+										<option class="select-item" value="14">Río Negro</option>
+										<option class="select-item" value="15">Salta</option>
+										<option class="select-item" value="16">San Juan</option>
+										<option class="select-item" value="17">San Luis</option>
+										<option class="select-item" value="18">Santa Cruz</option>
+										<option class="select-item" value="19">Santa Fe</option>
+										<option class="select-item" value="20">Santiago del Estero</option>
+										<option class="select-item" value="21">Tierra del Fuego</option>
+										<option class="select-item" value="22">Tucumán</option>				
+									</select>
+								</div>
+							</div>	
+							<div class="linea centrado">
+								<input type="checkbox" id="check-terminos" required>
+								<label class="etiqueta">Acepto los <a href="./termns.html">terminos y condiciones</a></label>
+							</div>
+							<div class="linea centrado">
+								<input type="checkbox" id="check-news">
+								<label class="etiqueta">Acepto recibir <i>newsletters</i> de Editorial Intelectos</label>
+							</div>
+							<input type="submit" id="submit-registro" value="Crear cuenta">
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<main style="display: none;">
 			<section id="registro">
 				<article>
 					<div class="caja">
@@ -102,16 +194,12 @@
 										<option value="21">Tierra del Fuego</option>
 										<option value="22">Tucumán</option>				
 									</select>
-									
 									<label for="usuario"></label>
 									<input type="text" name="usuario" id="usuario" placeholder="nombre de usuario">
-									
 									<label for="contrasena"></label>
 									<input type="password" id="contrasena" name="contrasena" placeholder="contraseña">
-									
 									<label for="contrasena2"></label>
 									<input type="password" id="contrasena2" name="contrasena2" placeholder="contraseña nuevamente">
-									
 									<label for="mail"></label>
 									<input type="email" name="mail" id="mail" placeholder="example@email.com">
 									<input type="submit" name="enviar" id="enviar">
