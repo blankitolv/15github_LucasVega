@@ -1288,21 +1288,21 @@ header {
                                 width: 435px;
                             }
                         }
-                        @media screen and (min-width:420px) and (max-width:600px){
-                            justify-content:center;
-                            .columna-etiqueta {
-                                #correo {
-                                    width:350px;
-                                }
-                            }
-                        }
-                        @media screen and (min-width:360px) and (max-width:420px){
+                        @media screen and (max-width:420px){
                             flex-direction: column;
                             .columna-etiqueta {
                                 align-items: center;
                                 justify-content: center;
                                 #correo {
                                     width: 190px;
+                                }
+                            }
+                        }
+                        @media screen and (min-width:420px) and (max-width:600px){
+                            justify-content:center;
+                            .columna-etiqueta {
+                                #correo {
+                                    width:350px;
                                 }
                             }
                         }
