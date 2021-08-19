@@ -131,6 +131,24 @@ header {
                 font-weight: bold;
                 cursor:pointer;
             }
+            @media screen and (min-width:360px) and (max-width:420px) {
+                a {
+                    font-size: 18pt;
+                    padding:0px 20px;
+                }               
+            }
+            @media screen and (min-width:320px) and (max-width:360px) {
+                a {
+                    font-size: 16pt;
+                    padding:0px 10px;
+                }               
+            }
+            @media screen and (min-width:280px) and (max-width:320px) {
+                a {
+                    font-size: 11pt;
+                    padding:0px 2px;
+                }               
+            }
         }
         ul { 
             float: right;
@@ -774,6 +792,7 @@ header {
         background-image: url("../images/cubes.png"),
         url("../images/45-degree-fabric-dark.png");
         filter: opacity(50%);
+        background-attachment: fixed;
     }
     .site-productos {
         position: relative;
@@ -792,6 +811,10 @@ header {
                 margin-top:4%;
                 font-size: 20pt;
                 font-weight: bold;
+                @media screen and (min-width: 300px) and (max-width: 420px){
+                    font-size: 13pt;
+                    letter-spacing: 0px;
+                }
             }
         }
         .ordena-producto {
@@ -838,9 +861,8 @@ header {
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 10px;
-                @media (max-width:800px){
-                    width: 360px;  
-                    box-sizing: none;                  
+                @media screen and (max-width:600px) {
+                    width: 100%;
                 }
                 .buscar {
                     width: 250px;
@@ -872,15 +894,16 @@ header {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-    
                         input[type=text] {
                             padding: 8px;
                             border: 1px gray;
+                            @media screen and (max-width:600px) {
+                                width: 150px;
+                            }
                             @media (max-width:800px){
                                 margin-right: 20px;
                             }
                         }
-                        
                         input[type=submit] {
                             font-weight: 400;
                             padding: 10px;
@@ -1000,6 +1023,7 @@ header {
             position: inherit;
             z-index:5;
             .footer-logo {
+                display:none;
                 width: 147px;
                 height: 58px;
                 background-position: center;
@@ -1018,6 +1042,12 @@ header {
                     .span-yellow {
                         color: yellow;
                     }
+                    @media screen and (min-width:310px) and (max-width:340px) {
+                        margin:0px;
+                        hr {
+                            margin: 1px 0px;
+                        }
+                    }
                 }
             }
             .footer-social {
@@ -1032,7 +1062,6 @@ header {
                         filter: blur(2px);
                     }
                     li { 
-                        // color: rgb(179, 0, 0);
                         display: inline-block;
                         margin: 0 15px;
                         width: 50px;
@@ -1056,6 +1085,16 @@ header {
                                 filter: none;
                             }
                         }
+                        @media screen and (min-width:280px) and (max-width:300px) {
+                            margin:0px 5px;
+                        }
+                    }
+                }
+                @media screen and (min-width:280px) and (max-width:370px) {
+                    margin-right:5px;
+                    ul {
+                        margin-bottom:1px;
+                        padding-bottom:5px;
                     }
                 }
             }            
@@ -1449,6 +1488,27 @@ header {
         hr {
             border-top: 2px solid rgba(255, 255, 255, 0.897);
         }
+        @media screen and (min-width:400px) and (max-width:500px) {
+            h1 {
+                font-size: 20pt;
+            }
+            h2 {
+                max-width: 100%;
+            }
+        }
+        @media screen and (min-width:320px) and (max-width:400px) {
+            h1 {
+                font-size: 16pt;
+            }
+            h2 {
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width:320px) {
+            h1 {
+                font-size: 10pt;
+            }
+        }
     }
     .tabla {
         cursor:default;
@@ -1474,6 +1534,9 @@ header {
                         input[type=number]{
                             width: 45px;
                         }
+                    }
+                    @media screen and (max-width:350px) {
+                        font-size: 10pt;
                     }
                 }
             }
@@ -1577,6 +1640,7 @@ header {
 /**********************/
 /* BEGIN CONTACTO.HTML*/
 /**********************/
+
 .contacto {
     position: relative;
     z-index: 1;
@@ -1671,7 +1735,7 @@ header {
             }
         }
         .formulario-contacto {
-            width: 40%;
+            width: 350px;
             padding: 40px;
             background-color: #fff;
             h2 {
@@ -1719,6 +1783,40 @@ header {
         padding: 50px 5px;
         overflow: hidden;
     }
+    @media (max-width:400px){
+        .contenido{
+            h2{
+                font-size: 14pt;
+            }
+            p{
+                font-size: 9pt;
+                width: 360px;
+            }
+        }
+        .contenedor {
+            flex-direction: column;
+            .datos-contacto{
+                width: 300px;
+            }
+        }
+    }
+    @media screen and (min-width:400px)and(max-width:950px){
+        .contenido{
+            h2{
+                font-size: 20pt;
+            }
+            p{
+                font-size: 12pt;
+                width: 400px;
+            }
+        }
+        .contenedor {
+            flex-direction: column;
+            .datos-contacto{
+                width: 300px;
+            }
+        }
+    }
 }
 /********************/
 /* END CONTACTO.HTML*/
@@ -1763,6 +1861,7 @@ header {
             -moz-filter: invert(20%);
             background-size:auto;
             background-position: center;
+            background-attachment: fixed;
         }
         .izquierda-derecha {
             width: 100%;
@@ -1883,7 +1982,7 @@ header {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1912,6 +2011,7 @@ header {
     -moz-filter: invert(20%);
     background-size:auto;
     background-position: center;
+    background-attachment: fixed;
     }
     .titulos-faqs {
         width: 70%;
@@ -1919,7 +2019,7 @@ header {
         margin: 20px 0;
         position: relative;
         z-index: 50;
-        color: rgb(35, 170, 211);
+        color: $micianclaro;
         display: flex;
         flex-direction: column;
         margin-top: 50px;
@@ -1939,7 +2039,7 @@ header {
             min-width: 50%;
             width: 70%;
             align-self: center;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 1px;
         }
     }
@@ -1949,7 +2049,17 @@ header {
         margin: 5px 0 5px;
         z-index: 25;
     }
-    
+    @media screen and(max-width:1100px){
+        height: 110vh;
+        .titulos-faqs{
+            width: 95%;
+            padding:30px;
+            p {
+                font-weight: 500;
+                width: 95%;
+            }
+        }
+    }
 }
 .main-faqs {
     width: 100%;

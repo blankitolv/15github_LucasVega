@@ -146,6 +146,27 @@ header nav .logo a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 360px) and (max-width: 420px) {
+  header nav .logo a {
+    font-size: 18pt;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  header nav .logo a {
+    font-size: 16pt;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 320px) {
+  header nav .logo a {
+    font-size: 11pt;
+    padding: 0px 2px;
+  }
+}
+
 header nav ul {
   float: right;
   margin-right: 10px;
@@ -972,6 +993,7 @@ header nav #check {
   background-image: url("../images/cubes.png"), url("../images/45-degree-fabric-dark.png");
   -webkit-filter: opacity(50%);
           filter: opacity(50%);
+  background-attachment: fixed;
 }
 
 .bg-productos .site-productos {
@@ -997,6 +1019,13 @@ header nav #check {
   margin-top: 4%;
   font-size: 20pt;
   font-weight: bold;
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+  .bg-productos .site-productos .site-encabezado h1 {
+    font-size: 13pt;
+    letter-spacing: 0px;
+  }
 }
 
 .bg-productos .site-productos .ordena-producto {
@@ -1086,11 +1115,9 @@ header nav #check {
   padding-bottom: 10px;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .bg-productos .site-productos .content-busca-productos .busca-y-filtro {
-    width: 360px;
-    -webkit-box-sizing: none;
-            box-sizing: none;
+    width: 100%;
   }
 }
 
@@ -1147,6 +1174,12 @@ header nav #check {
 .bg-productos .site-productos .content-busca-productos .busca-y-filtro .buscar .busca-box input[type=text] {
   padding: 8px;
   border: 1px gray;
+}
+
+@media screen and (max-width: 600px) {
+  .bg-productos .site-productos .content-busca-productos .busca-y-filtro .buscar .busca-box input[type=text] {
+    width: 150px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1331,6 +1364,7 @@ header nav #check {
 }
 
 .footer .footer-container .footer-izquierda .footer-logo {
+  display: none;
   width: 147px;
   height: 58px;
   background-position: center;
@@ -1351,6 +1385,15 @@ header nav #check {
 
 .footer .footer-container .footer-izquierda .footer-address address .span-yellow {
   color: yellow;
+}
+
+@media screen and (min-width: 310px) and (max-width: 340px) {
+  .footer .footer-container .footer-izquierda .footer-address address {
+    margin: 0px;
+  }
+  .footer .footer-container .footer-izquierda .footer-address address hr {
+    margin: 1px 0px;
+  }
 }
 
 .footer .footer-container .footer-izquierda .footer-social {
@@ -1405,6 +1448,22 @@ header nav #check {
           box-shadow: 0px 0px 5px 0px #c5c5c5;
   -webkit-filter: none;
           filter: none;
+}
+
+@media screen and (min-width: 280px) and (max-width: 300px) {
+  .footer .footer-container .footer-izquierda .footer-social ul li {
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 370px) {
+  .footer .footer-container .footer-izquierda .footer-social {
+    margin-right: 5px;
+  }
+  .footer .footer-container .footer-izquierda .footer-social ul {
+    margin-bottom: 1px;
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: 200px) {
@@ -1962,6 +2021,30 @@ header nav #check {
   border-top: 2px solid rgba(255, 255, 255, 0.897);
 }
 
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .main-mayorista .titulos-mayorista h1 {
+    font-size: 20pt;
+  }
+  .main-mayorista .titulos-mayorista h2 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .main-mayorista .titulos-mayorista h1 {
+    font-size: 16pt;
+  }
+  .main-mayorista .titulos-mayorista h2 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-mayorista .titulos-mayorista h1 {
+    font-size: 10pt;
+  }
+}
+
 .main-mayorista .tabla {
   cursor: default;
   -webkit-user-select: none;
@@ -1996,6 +2079,12 @@ header nav #check {
 
 .main-mayorista .tabla tbody tr td label input[type=number] {
   width: 45px;
+}
+
+@media screen and (max-width: 350px) {
+  .main-mayorista .tabla tbody tr td {
+    font-size: 10pt;
+  }
 }
 
 .main-mayorista .tabla tbody .tr-titulo {
@@ -2283,7 +2372,7 @@ header nav #check {
 }
 
 .contacto .contenedor .formulario-contacto {
-  width: 40%;
+  width: 350px;
   padding: 40px;
   background-color: #fff;
 }
@@ -2341,6 +2430,44 @@ header nav #check {
   overflow: hidden;
 }
 
+@media (max-width: 400px) {
+  .contacto .contenido h2 {
+    font-size: 14pt;
+  }
+  .contacto .contenido p {
+    font-size: 9pt;
+    width: 360px;
+  }
+  .contacto .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .contenedor .datos-contacto {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 950px) {
+  .contacto .contenido h2 {
+    font-size: 20pt;
+  }
+  .contacto .contenido p {
+    font-size: 12pt;
+    width: 400px;
+  }
+  .contacto .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .contenedor .datos-contacto {
+    width: 300px;
+  }
+}
+
 /********************/
 /* END CONTACTO.HTML*/
 /********************/
@@ -2394,6 +2521,7 @@ header nav #check {
   -moz-filter: invert(20%);
   background-size: auto;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .main-carrito .container-carrito .izquierda-derecha {
@@ -2566,7 +2694,7 @@ header nav #check {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2608,6 +2736,7 @@ header nav #check {
   -moz-filter: invert(20%);
   background-size: auto;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .super-contenedor .titulos-faqs {
@@ -2616,7 +2745,7 @@ header nav #check {
   margin: 20px 0;
   position: relative;
   z-index: 50;
-  color: #23aad3;
+  color: #0bc1ce;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2647,7 +2776,7 @@ header nav #check {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -2656,6 +2785,20 @@ header nav #check {
   padding: 5px 0 5px;
   margin: 5px 0 5px;
   z-index: 25;
+}
+
+@media screen and (max-width: 1100px) {
+  .super-contenedor {
+    height: 110vh;
+  }
+  .super-contenedor .titulos-faqs {
+    width: 95%;
+    padding: 30px;
+  }
+  .super-contenedor .titulos-faqs p {
+    font-weight: 500;
+    width: 95%;
+  }
 }
 
 .main-faqs {
