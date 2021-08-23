@@ -10,10 +10,6 @@ html {
 .invisible {
     display:none;
 }
-/******************/
-/* VARIABLES SASS */
-/******************/
-// colores
 $viejito: rgb(245, 245, 236);
 $blanco:rgb(255,255,255);
 $marroncito: rgb(138, 17, 17);
@@ -26,7 +22,7 @@ $micianmasoscuro: #30a3b4;
 $miazuloscuro:#003391;
 $miazulclaro:#4e8cff;
 $verdeclaro:rgb(113, 185, 190);
-// fin colores
+
 $break955:955px;
 $break850:850px;
 $break400:400px;
@@ -36,9 +32,6 @@ $break340:340px;
     src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
     font-display: swap;
 }
-
-
-/********* BODY **************/
 body {
     width: 100%;
     font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -95,8 +88,6 @@ body {
         }
     }
 }
-/************* header **************/
-
 header {
     width: 100%;
     .supramenu {
@@ -253,7 +244,7 @@ header {
     .bkg-image-index {
         width: 100%;
         height: 100vh;
-        background-image: url("../images/backhomew.webp");
+        background-image: url("../images/backhome1399.jpg");
         background-position:center;
         background-size: cover;
         position: relative;
@@ -314,19 +305,7 @@ header {
         text-shadow: 0px 0px 3px rgb(60, 255, 0);
         }
     }
-    // @media (max-width:850px) {
-    //     top: 85%;
-    //     p {
-    //         display: none;
-    //     }
-    //     a {
-    //         i {
-    //             font-size: 40pt;
-    //         }
-    //     }
-    // }
 }
-/* novedades index */
 .marcas {
     .container-hero-video {
         width: 100%;
@@ -389,6 +368,8 @@ header {
                 letter-spacing: 2px;
                 max-width: 40em;
                 margin-bottom: 30px;
+                text-align: justify;
+                text-justify: inter-word;
             }
             .resaltador {
                 color: rgb(135, 222, 222);
@@ -396,62 +377,8 @@ header {
             .resaltador2 {
                 color: rgb(255, 213, 124);
             }
-            // @media (max-width:$break955) {
-            //     h2 {
-            //         font-size: 20pt;
-            //         letter-spacing: 4px;
-            //     }
-            //     p {
-            //         font-size: 16pt;
-            //         max-width: 50em;
-            //     }
-            // }
-            // @media (max-width:$break850) {
-            //     h2 {
-            //         font-size: 19pt;
-            //     }
-            //     p {
-            //         font-size: 15pt;
-            //         max-width: 55em;
-            //     }
-            // }
-            // @media (min-width:270px) and (max-width:400px) {
-            //     h2 {
-            //         font-size: 16pt;
-            //     }
-            //     p {
-            //         font-size: 12pt;
-            //         letter-spacing: 1px;
-            //     }
-            // }
         }
     }
-    // @media (max-width:766px) {
-    //     .cancionero-pic {
-    //         .video-index {
-    //             display:none;
-    //         }
-    //         background-image:url("../images/0hombre-guitarra.png");
-    //         background-size: cover;
-    //         background-position: center;
-    //     }
-    //     .miafita-pic {
-    //         .video-index {
-    //             display: none;
-    //         }
-    //         background-image:url("../images/0mujer-leyendo22.webp");
-    //         background-size: cover;
-    //         background-position: center;
-    //     }
-    //     .varios-pic {
-    //         .video-index {
-    //             display: none;
-    //         }
-    //         background-image:url("../images/vario.webp");
-    //         background-size: cover;
-    //         background-position: center;
-    //     }
-    // }  
     .bkg-container-carousel {
         position: relative;
         width: 100%;
@@ -490,13 +417,6 @@ header {
                 padding-top: 30px;
             }
         }
-        // @media (max-width:400px ){
-        //     .texto-carousel {
-        //         h3 {
-        //             font-size: 20pt;
-        //         }
-        //     }
-        // }
         .carousel {
             position: relative;
             z-index:70;
@@ -519,7 +439,7 @@ header {
         height: 30rem;
         position: relative;        
         padding: 1px 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/lettersw.webp");
+        background-image: linear-gradient(rgba(0, 81, 128, 0.5), rgba(0, 81, 128, 0.5)), url("../images/letters.jpg");
         .container-news {
             width: 100%;
             height: 100%;
@@ -586,54 +506,8 @@ header {
                         }
                     }
                 }
-                // @media (max-width:$break400) {
-                //     h6 {
-                //         font-size: 15pt;
-                //         letter-spacing: 3px;
-                //     }
-                //     p {
-                //         font-size: 14pt;
-                //         span {
-                //             font-size: 17pt;
-                //         }
-                //     }
-                // }
             }
         }
-        // @media (max-width:$break955){
-        //     .container-news {
-        //         .content-news {
-        //             h6 {
-        //                 font-size: 15pt;
-        //                 letter-spacing: 4px;
-        //             }
-        //             p {
-        //                 font-size: 13pt;
-        //                 span {
-        //                     font-size: 17pt;
-        //                 }
-        //             }
-
-        //         }
-        //     }
-        // }
-        // @media (max-width:$break850) {
-        //     .container-news {
-        //         .content-news {
-        //             h6 {
-        //                 font-size: 14pt;
-        //                 letter-spacing: 3px;
-        //             }
-        //             p {
-        //                 font-size: 12pt;
-        //                 span {
-        //                     font-size: 16pt;
-        //                 }
-        //             }
-
-        //         }
-        //     }
-        // }
     }
     .container-nuestras-redes {
         padding: 50px 0px;
@@ -654,27 +528,12 @@ header {
             margin-left: 50px;
             font-weight: bold;
             text-transform: uppercase;
-            // @media (max-width:670px) {
-            //     font-size: 17pt;
-            // }
-            // @media (max-width:$break400) {
-            //     font-size: 15pt;
-            // }
-            // @media (max-width:$break340){
-            //     font-size: 12pt;
-            // }
         }
         p {
             font-size: 1rem;
             padding-top: 20px;
             align-self: center;
             font-weight: 600;
-            // @media (max-width:670px) {
-            //     max-width: 350px;
-            // }
-            // @media (max-width:$break340){
-            //     padding-left: 5px;
-            // }
         }
         .container-socialMedia {
             display: flex;
@@ -714,13 +573,8 @@ header {
                     transform: translate(-50%,-50%);
                     width: 17rem;
                     height: 17rem;
-                    // background: rgb(202, 199, 199);
                     z-index: -20;
                     transition: .5s;
-                    // @media (max-width:$break850) {
-                    //     width: 200px;
-                    //     height: 200px;
-                    // }
                 }
                 a:hover:before {
                     transform:translate (-50%,-50%) scale (0);
@@ -746,17 +600,10 @@ header {
                     color:#25D366;
                     text-shadow: 0px 0px 5px #1d9b4b;
                 }
-                // @media (max-width:815px) {
-                //     flex-wrap: wrap;
-                // }
-                // @media (max-width:618px) {
-                //     justify-content: space-around;
-                // }
             }
         }
     }
 }
-// movimientos tarjetas
 .carousel-item {
     .card {
         z-index:70;
@@ -773,17 +620,10 @@ header {
         transition: all .7s ease;
     }
 }
-
-/********************/
-/* END INDEX.HTML*/
-/********************/
-/***********************/
-/* BEGIN PRODUCTOS.HTML*/
-/***********************/
 .banner-productos {
     width: 100%;
     height: 50vh;
-    background-image: url("../images/pmujer-feliz.webp");
+    background-image: url("../images/bkg-prod/bkg-prod769.jpg");
     background-attachment: fixed;
     background-position: 50% 100%;
 }
@@ -820,10 +660,6 @@ header {
                 margin-top:4%;
                 font-size: 1.666rem;
                 font-weight: bold;
-                // @media screen and (min-width: 300px) and (max-width: 420px){
-                //     font-size: 13pt;
-                //     letter-spacing: 0px;
-                // }
             }
         }
         .ordena-producto {
@@ -831,12 +667,6 @@ header {
             justify-content: flex-end;
             align-items: flex-end;
             padding: 8px;
-            // @media (max-width:742px) {
-            //     justify-content: flex-start;
-            //     align-items: flex-start;
-            //     flex-direction: column;
-            // }
-
             select {
                 position:relative;
                 z-index: 25;
@@ -849,9 +679,6 @@ header {
                     transition: .3s;
                     box-shadow: 0px 0px 7px 1px black;
                 }
-                // @media (max-width:742px) {
-                //     margin: 15px;
-                // }
             }
             .cualidad {
                 margin-left: 18px;
@@ -859,10 +686,6 @@ header {
         }
         .content-busca-productos {
             display: flex;
-            // @media (max-width:600px) {
-            //     flex-direction: column;
-            //     align-items: center;
-            // }
             .busca-y-filtro {
                 width: 350px;
                 height: auto;
@@ -870,9 +693,6 @@ header {
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 10px;
-                // @media screen and (max-width:600px) {
-                //     width: 100%;
-                // }
                 .buscar {
                     width: 250px;
                     height: auto;
@@ -906,12 +726,6 @@ header {
                         input[type=text] {
                             padding: 8px;
                             border: 1px gray;
-                            // @media screen and (max-width:600px) {
-                            //     width: 150px;
-                            // }
-                            // @media (max-width:800px){
-                            //     margin-right: 20px;
-                            // }
                         }
                         input[type=submit] {
                             font-weight: 400;
@@ -927,7 +741,6 @@ header {
                         
                     }
                 }
-                
             }
             .content-productos {
                 display: flex;
@@ -972,12 +785,7 @@ header {
         }
     }
 }
-/***********************/
-/* END PRODUCTOS.HTML*/
-/***********************/
-/***********************/
-/* BEGIN FOOTER.HTML*/
-/***********************/
+
 .footer {
     color: whitesmoke;
     box-sizing: border-box;
@@ -998,30 +806,6 @@ header {
         filter:opacity(90%);
         position: inherit;
         z-index: 0;
-        // @media (max-width:540px) {
-        //     background-image: url("../images/backhome539.webp");
-        //     background-size: cover;
-        //     background-position: center;
-        //     background-attachment: fixed;
-        // }
-        // @media screen and (min-width:537px) and (max-width:767px){
-        //     background-image: url("../images/backhome767.png");
-        //     background-size: cover;
-        //     background-position: center;
-        //     background-attachment: fixed;
-        // }
-        // @media screen and (min-width:767px) and (max-width:1083px){
-        //     background-image: url("../images/backhome1083.png");
-        //     background-size: cover;
-        //     background-position: center;
-        //     background-attachment: fixed;
-        // }
-        // @media screen and (min-width: 1083px){
-        //     background-image: url("../images/backhome1399.jpg");
-        //     background-size: cover;
-        //     background-position: center;
-        //     background-attachment: fixed;
-        // }
         .footer-izquierda {
             width: 400px;
             height: 50vh;
@@ -1031,17 +815,6 @@ header {
             justify-content: space-evenly;
             position: inherit;
             z-index:5;
-            .footer-logo {
-                display:none;
-                width: 147px;
-                height: 58px;
-                background-position: center;
-                background-size: cover;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
             .footer-address {
                 address {
                     color: rgb(0, 0, 0);
@@ -1051,12 +824,6 @@ header {
                     .span-yellow {
                         color: yellow;
                     }
-                    // @media screen and (min-width:310px) and (max-width:340px) {
-                    //     margin:0px;
-                    //     hr {
-                    //         margin: 1px 0px;
-                    //     }
-                    // }
                 }
             }
             .footer-social {
@@ -1094,22 +861,9 @@ header {
                                 filter: none;
                             }
                         }
-                        // @media screen and (min-width:280px) and (max-width:300px) {
-                        //     margin:0px 5px;
-                        // }
                     }
                 }
-                // @media screen and (min-width:280px) and (max-width:370px) {
-                //     margin-right:5px;
-                //     ul {
-                //         margin-bottom:1px;
-                //         padding-bottom:5px;
-                //     }
-                // }
             }            
-            // @media (min-width:200px) {
-            //     width: 250px;
-            // }
         }
         .footer-derecha {
             position: inherit;
@@ -1119,9 +873,6 @@ header {
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin-right: 130px;
-                // @media (max-width:1045px){
-                //     margin-right: 80px;
-                // }
                 ul{
                     li{
                         margin-top: 10px;
@@ -1144,22 +895,7 @@ header {
                     }
                 }
             }
-            // @media (max-width:$break850){
-            //     .footer-mapa {
-            //         margin-right: 50px;
-            //         ul {
-            //             li {
-            //                 font-size: 10pt;
-            //             }
-            //         }
-            //     }
-            // }
         }
-        // @media (max-width:770px){
-        //     flex-direction: column-reverse;
-        //     justify-content: center;
-        //     padding-top: 60px;
-        // }
     }
     #textura-footer {
         position: absolute;
@@ -1173,15 +909,9 @@ header {
         -moz-filter: brightness(90%);
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
-
     }
 }
-/******************/
-/* END FOOTER.HTML*/
-/******************/
-/**********************/
-/* BEGIN REGISTRO.HTML*/
-/**********************/
+
     .main-registro {
         padding:1px;
         width: 100%;   
@@ -1298,24 +1028,6 @@ header {
                                 width: 12rem;
                             }
                         }
-                        // @media screen and (max-width:420px){
-                        //     flex-direction: column;
-                        //     .columna-etiqueta {
-                        //         align-items: center;
-                        //         justify-content: center;
-                        //         #correo {
-                        //             width: 190px;
-                        //         }
-                        //     }
-                        // }
-                        // @media screen and (min-width:420px) and (max-width:600px){
-                        //     justify-content:center;
-                        //     .columna-etiqueta {
-                        //         #correo {
-                        //             width:350px;
-                        //         }
-                        //     }
-                        // }
                     }
                     .centrado {
                         margin-top: 10px;
@@ -1347,18 +1059,9 @@ header {
                     }
                 }
             }
-            // @media screen and (max-width:600px){
-            //     width: auto;
-            //     padding: 2px 7px;
-            // }
         }
     }
-/********************/
-/* END REGISTRO.HTML*/
-/********************/
-/**********************/
-/* BEGIN mayorista.HTML*/
-/**********************/
+
 .imagen-y-login {
     position: relative;
     width: 100%;
@@ -1374,30 +1077,6 @@ header {
             background-color: gray;
             width: 100%;
             height: 100%;
-            // @media (max-width:540px) {
-            //     background-image: url("../images/minw539-2.jpg");
-            //     background-size: cover;
-            //     background-position: center;
-            //     background-attachment: fixed;
-            // }
-            // @media screen and (min-width:537px) and (max-width:767px){
-            //     background-image: url("../images/minw767-2.jpg");
-            //     background-size: cover;
-            //     background-position: center;
-            //     background-attachment: fixed;
-            // }
-            // @media screen and (min-width:767px) and (max-width:1083px){
-            //     background-image: url("../images/minw1083-2.jpg");
-            //     background-size: cover;
-            //     background-position: center;
-            //     background-attachment: fixed;
-            // }
-            // @media screen and (min-width: 1083px){
-            //     background-image: url("../images/minw1399-1.jpg");
-            //     background-size: cover;
-            //     background-position: center;
-            //     background-attachment: fixed;
-            // }
         }
         .textos-login {
             position: absolute;
@@ -1444,33 +1123,18 @@ header {
                 .link-create{
                     a {
                         color:white;
-                        // @media screen and (max-width:766px) {
-                        //     letter-spacing: 1px;
-                        //     text-shadow: 1px 1px 2px black;
-                        //     font-weight: 500;
-                        // }
-
                     }
                 }
             }
         }
     }
-    // @media (max-width:540px) {
-    //     .container-login {
-    //         .bkg-login {
-    //             display:inline;
-    //         }
-    //         .textos-login {
-    //             position: relative;
-    //         }
-    //     }
-    // }
 }
 .main-mayorista {
     width: 100%;
     position: relative;
     background-color: black;
     background-image:url("../images/cubes.png");
+    background-attachment: fixed;
     padding: 1px 0px 50px;
     display: flex;
     flex-direction: column;
@@ -1498,33 +1162,11 @@ header {
         hr {
             border-top: 2px solid rgba(255, 255, 255, 0.897);
         }
-        // @media screen and (min-width:400px) and (max-width:500px) {
-        //     h1 {
-        //         font-size: 20pt;
-        //     }
-        //     h2 {
-        //         max-width: 100%;
-        //     }
-        // }
-        // @media screen and (min-width:320px) and (max-width:400px) {
-        //     h1 {
-        //         font-size: 16pt;
-        //     }
-        //     h2 {
-        //         max-width: 100%;
-        //     }
-        // }
-        // @media screen and (max-width:320px) {
-        //     h1 {
-        //         font-size: 10pt;
-        //     }
-        // }
     }
     .tabla {
         cursor:default;
         user-select: none;
         width: 90%;
-        // border: 1px solid black;
         margin: 20px auto;
         box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.56);
         border:none;
@@ -1545,9 +1187,6 @@ header {
                             width: 45px;
                         }
                     }
-                    // @media screen and (max-width:350px) {
-                    //     font-size: 10pt;
-                    // }
                 }
             }
             .tr-titulo {
@@ -1580,14 +1219,7 @@ header {
         }
     }
 }
-/********************/
-/* END mayorista.HTML*/
-/********************/
-/************************/
-/* BEGIN INICSESION.HTML*/
-/************************/
-// main{
-//     width: 100%;
+
     .container-form {
         position: relative;
         width: 100%;
@@ -1642,14 +1274,6 @@ header {
             }
         }
     }
-// }
-
-/**********************/
-/* END INICSESION.HTML*/
-/**********************/
-/**********************/
-/* BEGIN CONTACTO.HTML*/
-/**********************/
 
 .contacto {
     position: relative;
@@ -1682,10 +1306,10 @@ header {
         position: relative;
         z-index: 22;
         max-width: 780px;
-        h2 {
+        h1 {
             align-self: left;
             font-size: 2.1rem;
-            font-weight: 500;
+            font-weight: 600;
             color: #fff;
         }
         p {
@@ -1793,51 +1417,11 @@ header {
         padding: 50px 5px;
         overflow: hidden;
     }
-    // @media (max-width:400px){
-    //     .contenido{
-    //         h2{
-    //             font-size: 14pt;
-    //         }
-    //         p{
-    //             font-size: 9pt;
-    //             width: 360px;
-    //         }
-    //     }
-    //     .contenedor {
-    //         flex-direction: column;
-    //         .datos-contacto{
-    //             width: 300px;
-    //         }
-    //     }
-    // }
-    // @media screen and (min-width:400px)and(max-width:950px){
-    //     .contenido{
-    //         h2{
-    //             font-size: 20pt;
-    //         }
-    //         p{
-    //             font-size: 12pt;
-    //             width: 400px;
-    //         }
-    //     }
-    //     .contenedor {
-    //         flex-direction: column;
-    //         .datos-contacto{
-    //             width: 300px;
-    //         }
-    //     }
-    // }
 }
-/********************/
-/* END CONTACTO.HTML*/
-/********************/
-/*********************/
-/* BEGIN CARRITO.HTML*/
-/*********************/
+
 .bkg-container {
     #bkg-image-carrito {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/carrito-envios8005xx.jpg");
-        // background-image: url("../images/carrito-envios8005xx.jpg");
         background-position:top 20% left 5%;
         background-size: cover;
         .bkg-texto {
@@ -1990,13 +1574,6 @@ header {
     }
 }
 
-/*******************/
-/* END CARRITO.HTML*/
-/*******************/
-/* ---------------------------------------- */
-/******************/
-/* BEGIN FAQS.HTML*/
-/******************/
 .banner-faqs {
     position: relative;
     z-index: 12;
@@ -2019,21 +1596,6 @@ header {
     background-color: rgb(53, 53, 53);
     background-image: url("../images/cubes.png");
     background-attachment: fixed;
-    // .textura-faqs{
-    // width: 100%;
-    // height: 100%;
-    // position: absolute;
-    // z-index: 11;
-    // top: 0%;
-    // left: 0%;
-    // background-image: url("../images/cubes.png");
-    // filter: invert(20%);
-    // -webkit-filter: invert(20%);
-    // -moz-filter: invert(20%);
-    // background-size:auto;
-    // background-position: center;
-    // background-attachment: fixed;
-    // }
     .titulos-faqs {
         width: 70%;
         padding: 50px;
@@ -2071,17 +1633,6 @@ header {
         margin: 5px 0 5px;
         z-index: 25;
     }
-    // @media screen and(max-width:1100px){
-    //     // height: 100vh;
-    //     .titulos-faqs{
-    //         width: 95%;
-    //         padding:30px;
-    //         p {
-    //             font-weight: 500;
-    //             width: 95%;
-    //         }
-    //     }
-    // }
 }
 .main-faqs {
     width: 100%;
@@ -2095,12 +1646,7 @@ header {
         height: auto;
     }
 }
-/****************/
-/* END FAQS.HTML*/
-/****************/
-/*******************/
-/* BEGIN error 404 */
-/*******************/
+
 .body-error {
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -2136,25 +1682,11 @@ header {
         }
     }
 }
-/*****************/
-/* END error 404 */
-/*****************/
-/***************/
-/* END NESTING */
-/***************/
- 
-/* Smartphones (landscape) ----------- */
+
 @media only screen and (min-width : 320px) and (max-width:360px){
-    // index -> banner
-    .bkg-container{
-        .bkg-image-index{
-            .bkg-texto{
-                span{
-                    font-size:1.4rem;
-                }
-            }
-        }
-    }
+    html {
+        font-size: 70%;
+    }  
     // index -> nuestras-redes ->
     .marcas{
         .container-nuestras-redes{
@@ -2171,7 +1703,7 @@ header {
         .container-hero-video{
             .titulo-hero{
                 p{
-                    font-size:1.3rem;
+                    font-size:95%;
                 }
             }
         }
@@ -2179,7 +1711,7 @@ header {
             .video-index{
                 display:none;
             }
-            background-image:url("../images/posters/0hombre-guitarra.jpg");
+            background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2187,7 +1719,7 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0mujer-leyendo22.jpg");
+            background-image:url("../images/posters/0mujer-leyendo222.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2195,9 +1727,63 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0chica-leyendo.jpg");
+            background-image:url("../images/posters/0chica-leyendo360.jpg");
             background-size: cover;
             background-position: center;
+        }
+    }
+    // productos
+    .bg-productos{
+        .site-productos{
+            padding:0px 0px;
+            .site-encabezado{
+                h1{
+                    font-size: 100%;
+                }
+            }
+            .content-busca-productos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .busca-y-filtro{
+                    width: 100vw;
+                    .buscar{
+                        align-self: center;
+                    }
+                }
+            }
+            .ordena-producto{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    // mayorista
+    .imagen-y-login{
+        .container-login{
+            .bkg-login{
+                background-image: url("../images/minw539-2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .textos-login{
+                top: 25%;
+                position: absolute;
+                .hipertextos-login{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .link-create{
+                        margin-top:10px;
+                        a{
+                            font-size: 1.2rem;
+                            letter-spacing: 1px;
+                            text-shadow: 1px 1px 2px black;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
         }
     }
     .main-mayorista{
@@ -2245,13 +1831,98 @@ header {
             }
         }
     }
+    // faqs
+    .super-contenedor{
+        .titulos-faqs{
+            width: 90%;
+            padding:1.4rem;
+            align-items: flex-start;
+            h1{
+                padding:2px;
+                margin:2px 2px 10px;
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            p{
+                min-width: 90%;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                text-align: justify;
+                text-justify: inter-word;
+                font-weight: 500;
+            }
+        }
+    }
+    // contacto
+    .contacto{
+        padding: 1px 1px;
+        .contenido{
+            h1{
+                margin:20px auto 20px 10px;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 1.30rem;
+                max-width: 90%;
+                margin:10px auto;
+            }
+        }
+        .contenedor{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100vw;
+            .datos-contacto{
+                .box{
+                    margin-left:10px;
+                    width: 28rem;
+                    .texto-contacto{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .formulario-contacto{
+                width: 100vw;
+                padding:0px;
+                background-color:rgba(255, 255, 255, 0.404);
+                form{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2{
+                        margin:10px 15px;
+                    }
+                    .input-box {
+                        width: 90%;
+
+                    }
+                }
+            }
+        }
+    }
     // footer
     .footer{
         .footer-container{
+            background-image: url("../images/backhome539-1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             .footer-izquierda{
                 width: 20rem;
+                .footer-address{
+                    address{
+                        padding-left:10px;
+                    }
+                }
                 .footer-social{
                     width: 13.7rem;
+                    .footer-facebook,.footer-insta,.footer-email{
+                        width: 35px;
+                        a{
+                            line-height: 35px;
+                        }
+                    }
                 }
             }
             .footer-derecha{
@@ -2278,10 +1949,10 @@ header {
         .container-hero-video{
             .titulo-hero{
                 h2{
-                    font-size: 1.4rem;
+                    font-size: 1.8rem;
                 }
                 p{
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -2300,7 +1971,7 @@ header {
             .video-index{
                 display:none;
             }
-            background-image:url("../images/posters/0hombre-guitarra.jpg");
+            background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2308,7 +1979,7 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0mujer-leyendo22.jpg");
+            background-image:url("../images/posters/0mujer-leyendo222.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2316,7 +1987,7 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0chica-leyendo.jpg");
+            background-image:url("../images/posters/0chica-leyendo360.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2360,11 +2031,14 @@ header {
     }
     // contacto
     .contacto{
+        background:url("../images/monu-peq.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         .contenido{
-            h2{
+            h1{
                 font-size: 2rem;
                 margin-bottom:30px;
-                font-weight: 500;
             }
             p{
                 font-size: 1.30rem;
@@ -2492,8 +2166,17 @@ header {
     // footer
     .footer{
         .footer-container{
+            background-image: url("../images/backhome539-1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             .footer-izquierda{
                 width: 20rem;
+                .footer-address{
+                    address{
+                        padding-left:10px;
+                    }
+                }
                 .footer-social{
                     width: 13.7rem;
                 }
@@ -2516,16 +2199,28 @@ header {
             }
             p {
                 max-width: 26rem;
+                font-size: 1.2rem;
             }
             .social{
                 justify-content:center;
+            }
+        }
+        .bkg-container-carousel{
+            .texto-carousel {
+                h3 {
+                    margin-left:3.125rem;
+                    font-size: 2.083rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
             }
         }
         .cancionero-pic{
             .video-index{
                 display:none;
             }
-            background-image:url("../images/posters/0hombre-guitarra.jpg");
+            background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra411.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2533,7 +2228,7 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0mujer-leyendo22.jpg");
+            background-image:url("../images/posters/0mujer-leyendo222.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2541,7 +2236,7 @@ header {
             .video-index {
                 display: none;
             }
-            background-image:url("../images/posters/0chica-leyendo.jpg");
+            background-image:url("../images/posters/0chica-leyendo411.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -2579,11 +2274,14 @@ header {
     }
     // contacto
     .contacto{
+        background:url("../images/monu-med.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         .contenido{
-            h2{
+            h1{
                 font-size: 2rem;
                 margin-bottom:30px;
-                font-weight: 500;
             }
             p{
                 font-size: 1.30rem;
@@ -2623,6 +2321,17 @@ header {
             }
         }
     }
+    // mayorista
+    .imagen-y-login{
+        .container-login{
+            .bkg-login{
+                background-image: url("../images/minw767-2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+    }
     // productos
     .bg-productos{
         .site-productos{
@@ -2646,6 +2355,10 @@ header {
     // footer
     .footer{
         .footer-container{
+            background-image: url("../images/backhome767.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             .footer-izquierda{
                 width: 20rem;
                 .footer-social{
@@ -2662,11 +2375,22 @@ header {
     }
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-  html {
-      font-size: 100%;
-  }
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+    html {
+        font-size: 100%;
+    }  
+    //index
     .marcas{
+        .container-hero-video{
+            .titulo-hero{
+                h2{
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
         .container-nuestras-redes{
             h6 {
                 font-size: 1.8rem;
@@ -2679,10 +2403,9 @@ header {
     // contacto
     .contacto{
         .contenido{
-            h2{
+            h1{
                 font-size: 2rem;
                 margin-bottom:30px;
-                font-weight: 500;
             }
             p{
                 font-size: 1.30rem;
@@ -2731,6 +2454,13 @@ header {
         }
     }
     // productos
+    .banner-productos{
+        width: 100%;
+        height: 70vh;
+        background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+        background-attachment: fixed;
+        background-position: 50% 50%;
+    }
     .bg-productos{
         .site-productos{
             .content-busca-productos{
@@ -2747,6 +2477,17 @@ header {
             }
             .ordena-producto{
                 margin-bottom: 20px;
+            }
+        }
+    }
+    // mayorista
+    .imagen-y-login{
+        .container-login{
+            .bkg-login{
+                background-image: url("../images/minw1083-2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
             }
         }
     }
@@ -2776,48 +2517,185 @@ header {
     // footer
     .footer{
       .footer-container{
-          .footer-derecha{
-              .footer-mapa{
-                  margin-right: 6rem;
-              }
-          }
+        background-image: url("../images/backhome1083.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        .footer-derecha{
+            .footer-mapa{
+                margin-right: 6rem;
+            }
+        }
+        .footer-izquierda{
+            .footer-address{
+                address{
+                    font-size: 0.8rem;
+                }
+            }
+        }
       }
     }
 }
+@media only screen and (min-width : 1024px){
+    html {
+        font-size: 100%;
+    }
+    // index -> posters
+    .marcas{
+        .container-hero-video{
+            .titulo-hero{
+                h2{
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .bkg-container-carousel{
+            .texto-carousel {
+                h3 {
+                    margin-left:3.125rem;
+                    font-size: 2.083rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    // registro
+    .main-registro{
+        .registro{
+            .caja-registro{
+                margin:15px;
+                .registro-formulario{
+                    .linea{
+                        justify-content:baseline;
+                        .columna-etiqueta{
+                            #correo{
+                                align-self: center;
+                                width: 28rem;
+                            }
+                        }
+                    }
+                    // #linea-columna{
+                    //     flex-direction: column;
+                    // }
+                    .centrado {
+                        margin-top: 10px;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: baseline;
+                        #check-terminos,#check-news {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //productos
+    .banner-productos{
+        width: 100%;
+        height: 50vh;
+        background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+        background-attachment: fixed;
+        background-position: 50% 80%;
+    }
+    // mayorista
+    .imagen-y-login{
+        .container-login{
+            .bkg-login{
+                background-image: url("../images/minw1083-2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+    }
+    // footer
+    .footer {
+        .footer-container{
+            background-image: url("../images/backhome1399.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    }
 
-/* iPads (landscape) ----------- */
-// @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
-//   /* Styles */
-// }
- 
-/* iPads (portrait) ----------- */
-// @media only screen and (min-width : 768px) and (max-width : 1024px){
-//   /* Styles */
-// }
- 
-/* Desktops and laptops ----------- */
-// @media only screen and (min-width : 1224px) {
-//     html {
-//         font-size: 100%;
-//     }
-// }
- 
-// /* Large screens ----------- */
-// @media only screen and (min-width : 1824px) {
-//   html {
-//       font-size: 100%;
-//   }
-// }
- 
-/* iPhone 4 ----------- */
-// @media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
-//     .footer{
-//         .footer-container{
-//             .footer-derecha{
-//                 .footer-mapa{
-//                     margin-right: 6rem;
-//                 }
-//             }
-//         }
-//     }
-// }
+}
+@media only screen and (min-width : 1224px) {
+    html {
+        font-size: 100%;
+    }
+    // index -> posters
+    .marcas{
+        .container-hero-video{
+            .titulo-hero{
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .bkg-container-carousel{
+            .texto-carousel {
+                h3 {
+                    margin-left:3.125rem;
+                    font-size: 2.083rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    // mayorista
+    .imagen-y-login{
+        .container-login{
+            .bkg-login{
+                background-image: url("../images/minw1399-1.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+        }
+    }
+    // faqs
+    .super-contenedor{
+        .titulos-faqs{
+            width: 90%;
+            padding:1.4rem;
+            align-items: flex-start;
+            h1{
+                padding:2px;
+                margin:2px 2px 10px;
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            p{
+                min-width: 90%;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                text-align: justify;
+                text-justify: inter-word;
+                font-weight: 500;
+            }
+        }
+    }
+    //productos
+    .banner-productos{
+        width: 100%;
+        height: 70vh;
+        background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+        background-attachment: fixed;
+        background-position: 50% 50%;
+    }
+}

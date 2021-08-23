@@ -13,16 +13,12 @@ html {
   display: none;
 }
 
-/******************/
-/* VARIABLES SASS */
-/******************/
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-display: swap;
 }
 
-/********* BODY **************/
 body {
   width: 100%;
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -94,7 +90,6 @@ body .fixed-carrito .bkg-carrito:hover {
   background-color: #002e36;
 }
 
-/************* header **************/
 header {
   width: 100%;
 }
@@ -274,7 +269,7 @@ header nav #check {
 .bkg-container .bkg-image-index {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/backhomew.webp");
+  background-image: url("../images/backhome1399.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -359,7 +354,6 @@ header nav #check {
   text-shadow: 0px 0px 3px #3cff00;
 }
 
-/* novedades index */
 .marcas .container-hero-video {
   width: 100%;
   height: 120vh;
@@ -447,6 +441,8 @@ header nav #check {
   letter-spacing: 2px;
   max-width: 40em;
   margin-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .marcas .container-hero-video .titulo-hero .resaltador {
@@ -540,8 +536,8 @@ header nav #check {
   height: 30rem;
   position: relative;
   padding: 1px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/lettersw.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/lettersw.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 81, 128, 0.5)), to(rgba(0, 81, 128, 0.5))), url("../images/letters.jpg");
+  background-image: linear-gradient(rgba(0, 81, 128, 0.5), rgba(0, 81, 128, 0.5)), url("../images/letters.jpg");
 }
 
 .marcas .send-novedades .container-news {
@@ -807,16 +803,10 @@ header nav #check {
   transition: all .7s ease;
 }
 
-/********************/
-/* END INDEX.HTML*/
-/********************/
-/***********************/
-/* BEGIN PRODUCTOS.HTML*/
-/***********************/
 .banner-productos {
   width: 100%;
   height: 50vh;
-  background-image: url("../images/pmujer-feliz.webp");
+  background-image: url("../images/bkg-prod/bkg-prod769.jpg");
   background-attachment: fixed;
   background-position: 50% 100%;
 }
@@ -1052,12 +1042,6 @@ header nav #check {
   color: #505050;
 }
 
-/***********************/
-/* END PRODUCTOS.HTML*/
-/***********************/
-/***********************/
-/* BEGIN FOOTER.HTML*/
-/***********************/
 .footer {
   color: whitesmoke;
   -webkit-box-sizing: border-box;
@@ -1111,19 +1095,6 @@ header nav #check {
           justify-content: space-evenly;
   position: inherit;
   z-index: 5;
-}
-
-.footer .footer-container .footer-izquierda .footer-logo {
-  display: none;
-  width: 147px;
-  height: 58px;
-  background-position: center;
-  background-size: cover;
-}
-
-.footer .footer-container .footer-izquierda .footer-logo img {
-  width: 100%;
-  height: 100%;
 }
 
 .footer .footer-container .footer-izquierda .footer-address address {
@@ -1246,12 +1217,6 @@ header nav #check {
   backdrop-filter: blur(5px);
 }
 
-/******************/
-/* END FOOTER.HTML*/
-/******************/
-/**********************/
-/* BEGIN REGISTRO.HTML*/
-/**********************/
 .main-registro {
   padding: 1px;
   width: 100%;
@@ -1485,12 +1450,6 @@ header nav #check {
   letter-spacing: 2px;
 }
 
-/********************/
-/* END REGISTRO.HTML*/
-/********************/
-/**********************/
-/* BEGIN mayorista.HTML*/
-/**********************/
 .imagen-y-login {
   position: relative;
   width: 100%;
@@ -1573,6 +1532,7 @@ header nav #check {
   position: relative;
   background-color: black;
   background-image: url("../images/cubes.png");
+  background-attachment: fixed;
   padding: 1px 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1693,12 +1653,6 @@ header nav #check {
   color: black;
 }
 
-/********************/
-/* END mayorista.HTML*/
-/********************/
-/************************/
-/* BEGIN INICSESION.HTML*/
-/************************/
 .container-form {
   position: relative;
   width: 100%;
@@ -1794,12 +1748,6 @@ header nav #check {
   font-size: 10pt;
 }
 
-/**********************/
-/* END INICSESION.HTML*/
-/**********************/
-/**********************/
-/* BEGIN CONTACTO.HTML*/
-/**********************/
 .contacto {
   position: relative;
   z-index: 1;
@@ -1845,12 +1793,12 @@ header nav #check {
   max-width: 780px;
 }
 
-.contacto .contenido h2 {
+.contacto .contenido h1 {
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
   font-size: 2.1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -2001,12 +1949,6 @@ header nav #check {
   overflow: hidden;
 }
 
-/********************/
-/* END CONTACTO.HTML*/
-/********************/
-/*********************/
-/* BEGIN CARRITO.HTML*/
-/*********************/
 .bkg-container #bkg-image-carrito {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/carrito-envios8005xx.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/carrito-envios8005xx.jpg");
@@ -2224,13 +2166,6 @@ header nav #check {
   border-top: 2px solid white;
 }
 
-/*******************/
-/* END CARRITO.HTML*/
-/*******************/
-/* ---------------------------------------- */
-/******************/
-/* BEGIN FAQS.HTML*/
-/******************/
 .banner-faqs {
   position: relative;
   z-index: 12;
@@ -2336,12 +2271,6 @@ header nav #check {
   height: auto;
 }
 
-/****************/
-/* END FAQS.HTML*/
-/****************/
-/*******************/
-/* BEGIN error 404 */
-/*******************/
 .body-error {
   font-family: 'Roboto', sans-serif;
   width: 100%;
@@ -2387,16 +2316,9 @@ header nav #check {
   color: cadetblue;
 }
 
-/*****************/
-/* END error 404 */
-/*****************/
-/***************/
-/* END NESTING */
-/***************/
-/* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 360px) {
-  .bkg-container .bkg-image-index .bkg-texto span {
-    font-size: 1.4rem;
+  html {
+    font-size: 70%;
   }
   .marcas .container-nuestras-redes h6 {
     font-size: 1.5rem;
@@ -2410,10 +2332,11 @@ header nav #check {
             justify-content: center;
   }
   .marcas .container-hero-video .titulo-hero p {
-    font-size: 1.3rem;
+    font-size: 95%;
   }
   .marcas .cancionero-pic {
-    background-image: url("../images/posters/0hombre-guitarra.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 61, 56, 0.336)), to(rgba(0, 78, 78, 0.336))), url("../images/posters/0hombre-guitarra360.jpg");
+    background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2421,7 +2344,7 @@ header nav #check {
     display: none;
   }
   .marcas .miafita-pic {
-    background-image: url("../images/posters/0mujer-leyendo22.jpg");
+    background-image: url("../images/posters/0mujer-leyendo222.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2429,12 +2352,72 @@ header nav #check {
     display: none;
   }
   .marcas .varios-pic {
-    background-image: url("../images/posters/0chica-leyendo.jpg");
+    background-image: url("../images/posters/0chica-leyendo360.jpg");
     background-size: cover;
     background-position: center;
   }
   .marcas .varios-pic .video-index {
     display: none;
+  }
+  .bg-productos .site-productos {
+    padding: 0px 0px;
+  }
+  .bg-productos .site-productos .site-encabezado h1 {
+    font-size: 100%;
+  }
+  .bg-productos .site-productos .content-busca-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bg-productos .site-productos .content-busca-productos .busca-y-filtro {
+    width: 100vw;
+  }
+  .bg-productos .site-productos .content-busca-productos .busca-y-filtro .buscar {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .bg-productos .site-productos .ordena-producto {
+    margin-bottom: 20px;
+  }
+  .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw539-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .imagen-y-login .container-login .textos-login {
+    top: 25%;
+    position: absolute;
+  }
+  .imagen-y-login .container-login .textos-login .hipertextos-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagen-y-login .container-login .textos-login .hipertextos-login .link-create {
+    margin-top: 10px;
+  }
+  .imagen-y-login .container-login .textos-login .hipertextos-login .link-create a {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 500;
   }
   .main-mayorista .titulos-mayorista h1 {
     font-size: 1.8rem;
@@ -2489,11 +2472,101 @@ header nav #check {
   .main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
     margin-right: 7px;
   }
+  .super-contenedor .titulos-faqs {
+    width: 90%;
+    padding: 1.4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .super-contenedor .titulos-faqs h1 {
+    padding: 2px;
+    margin: 2px 2px 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .super-contenedor .titulos-faqs p {
+    min-width: 90%;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+  }
+  .contacto {
+    padding: 1px 1px;
+  }
+  .contacto .contenido h1 {
+    margin: 20px auto 20px 10px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .contacto .contenido p {
+    font-size: 1.30rem;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  .contacto .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100vw;
+  }
+  .contacto .contenedor .datos-contacto .box {
+    margin-left: 10px;
+    width: 28rem;
+  }
+  .contacto .contenedor .datos-contacto .box .texto-contacto {
+    font-size: 1rem;
+  }
+  .contacto .contenedor .formulario-contacto {
+    width: 100vw;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.404);
+  }
+  .contacto .contenedor .formulario-contacto form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacto .contenedor .formulario-contacto form h2 {
+    margin: 10px 15px;
+  }
+  .contacto .contenedor .formulario-contacto form .input-box {
+    width: 90%;
+  }
+  .footer .footer-container {
+    background-image: url("../images/backhome539-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .footer .footer-container .footer-izquierda {
     width: 20rem;
   }
+  .footer .footer-container .footer-izquierda .footer-address address {
+    padding-left: 10px;
+  }
   .footer .footer-container .footer-izquierda .footer-social {
     width: 13.7rem;
+  }
+  .footer .footer-container .footer-izquierda .footer-social .footer-facebook, .footer .footer-container .footer-izquierda .footer-social .footer-insta, .footer .footer-container .footer-izquierda .footer-social .footer-email {
+    width: 35px;
+  }
+  .footer .footer-container .footer-izquierda .footer-social .footer-facebook a, .footer .footer-container .footer-izquierda .footer-social .footer-insta a, .footer .footer-container .footer-izquierda .footer-social .footer-email a {
+    line-height: 35px;
   }
   .footer .footer-container .footer-derecha .footer-mapa {
     margin-right: 3rem;
@@ -2505,10 +2578,10 @@ header nav #check {
     font-size: 1.4rem;
   }
   .marcas .container-hero-video .titulo-hero h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .marcas .container-hero-video .titulo-hero p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .marcas .container-nuestras-redes h6 {
     font-size: 1.8rem;
@@ -2522,7 +2595,8 @@ header nav #check {
             justify-content: center;
   }
   .marcas .cancionero-pic {
-    background-image: url("../images/posters/0hombre-guitarra.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 61, 56, 0.336)), to(rgba(0, 78, 78, 0.336))), url("../images/posters/0hombre-guitarra360.jpg");
+    background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra360.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2530,7 +2604,7 @@ header nav #check {
     display: none;
   }
   .marcas .miafita-pic {
-    background-image: url("../images/posters/0mujer-leyendo22.jpg");
+    background-image: url("../images/posters/0mujer-leyendo222.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2538,7 +2612,7 @@ header nav #check {
     display: none;
   }
   .marcas .varios-pic {
-    background-image: url("../images/posters/0chica-leyendo.jpg");
+    background-image: url("../images/posters/0chica-leyendo360.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2577,10 +2651,15 @@ header nav #check {
   .main-mayorista .titulos-mayorista h2 {
     max-width: 25rem;
   }
-  .contacto .contenido h2 {
+  .contacto {
+    background: url("../images/monu-peq.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .contacto .contenido h1 {
     font-size: 2rem;
     margin-bottom: 30px;
-    font-weight: 500;
   }
   .contacto .contenido p {
     font-size: 1.30rem;
@@ -2712,8 +2791,17 @@ header nav #check {
   .main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
     margin-right: 7px;
   }
+  .footer .footer-container {
+    background-image: url("../images/backhome539-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .footer .footer-container .footer-izquierda {
     width: 20rem;
+  }
+  .footer .footer-container .footer-izquierda .footer-address address {
+    padding-left: 10px;
   }
   .footer .footer-container .footer-izquierda .footer-social {
     width: 13.7rem;
@@ -2729,14 +2817,23 @@ header nav #check {
   }
   .marcas .container-nuestras-redes p {
     max-width: 26rem;
+    font-size: 1.2rem;
   }
   .marcas .container-nuestras-redes .social {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .marcas .bkg-container-carousel .texto-carousel h3 {
+    margin-left: 3.125rem;
+    font-size: 2.083rem;
+  }
+  .marcas .bkg-container-carousel .texto-carousel p {
+    font-size: 1.4rem;
+  }
   .marcas .cancionero-pic {
-    background-image: url("../images/posters/0hombre-guitarra.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 61, 56, 0.336)), to(rgba(0, 78, 78, 0.336))), url("../images/posters/0hombre-guitarra411.jpg");
+    background-image: linear-gradient(rgba(0, 61, 56, 0.336), rgba(0, 78, 78, 0.336)), url("../images/posters/0hombre-guitarra411.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2744,7 +2841,7 @@ header nav #check {
     display: none;
   }
   .marcas .miafita-pic {
-    background-image: url("../images/posters/0mujer-leyendo22.jpg");
+    background-image: url("../images/posters/0mujer-leyendo222.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2752,7 +2849,7 @@ header nav #check {
     display: none;
   }
   .marcas .varios-pic {
-    background-image: url("../images/posters/0chica-leyendo.jpg");
+    background-image: url("../images/posters/0chica-leyendo411.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -2792,10 +2889,15 @@ header nav #check {
   .main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
     margin-right: 7px;
   }
-  .contacto .contenido h2 {
+  .contacto {
+    background: url("../images/monu-med.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .contacto .contenido h1 {
     font-size: 2rem;
     margin-bottom: 30px;
-    font-weight: 500;
   }
   .contacto .contenido p {
     font-size: 1.30rem;
@@ -2835,6 +2937,12 @@ header nav #check {
     text-justify: inter-word;
     font-weight: 500;
   }
+  .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw767-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .bg-productos .site-productos .content-busca-productos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2859,6 +2967,12 @@ header nav #check {
   .bg-productos .site-productos .ordena-producto {
     margin-bottom: 20px;
   }
+  .footer .footer-container {
+    background-image: url("../images/backhome767.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .footer .footer-container .footer-izquierda {
     width: 20rem;
   }
@@ -2872,9 +2986,15 @@ header nav #check {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   html {
     font-size: 100%;
+  }
+  .marcas .container-hero-video .titulo-hero h2 {
+    font-size: 1.6rem;
+  }
+  .marcas .container-hero-video .titulo-hero p {
+    font-size: 1.2rem;
   }
   .marcas .container-nuestras-redes h6 {
     font-size: 1.8rem;
@@ -2884,10 +3004,9 @@ header nav #check {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contacto .contenido h2 {
+  .contacto .contenido h1 {
     font-size: 2rem;
     margin-bottom: 30px;
-    font-weight: 500;
   }
   .contacto .contenido p {
     font-size: 1.30rem;
@@ -2933,6 +3052,13 @@ header nav #check {
   .main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
     margin-right: 7px;
   }
+  .banner-productos {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
   .bg-productos .site-productos .content-busca-productos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2957,6 +3083,12 @@ header nav #check {
   .bg-productos .site-productos .ordena-producto {
     margin-bottom: 20px;
   }
+  .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw1083-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .super-contenedor .titulos-faqs {
     width: 90%;
     padding: 1.4rem;
@@ -2979,13 +3111,140 @@ header nav #check {
     text-justify: inter-word;
     font-weight: 500;
   }
+  .footer .footer-container {
+    background-image: url("../images/backhome1083.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .footer .footer-container .footer-derecha .footer-mapa {
     margin-right: 6rem;
   }
+  .footer .footer-container .footer-izquierda .footer-address address {
+    font-size: 0.8rem;
+  }
 }
 
-/* iPads (landscape) ----------- */
-/* iPads (portrait) ----------- */
-/* Desktops and laptops ----------- */
-/* iPhone 4 ----------- */
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+  .marcas .container-hero-video .titulo-hero h2 {
+    font-size: 1.6rem;
+  }
+  .marcas .container-hero-video .titulo-hero p {
+    font-size: 1.2rem;
+  }
+  .marcas .bkg-container-carousel .texto-carousel h3 {
+    margin-left: 3.125rem;
+    font-size: 2.083rem;
+  }
+  .marcas .bkg-container-carousel .texto-carousel p {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .main-registro .registro .caja-registro {
+    margin: 15px;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .linea {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .linea .columna-etiqueta #correo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 28rem;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .centrado {
+    margin-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main-registro .registro .caja-registro .registro-formulario .centrado #check-terminos, .main-registro .registro .caja-registro .registro-formulario .centrado #check-news {
+    margin-right: 7px;
+  }
+  .banner-productos {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+    background-attachment: fixed;
+    background-position: 50% 80%;
+  }
+  .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw1083-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .footer .footer-container {
+    background-image: url("../images/backhome1399.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  html {
+    font-size: 100%;
+  }
+  .marcas .container-hero-video .titulo-hero h2 {
+    font-size: 1.8rem;
+  }
+  .marcas .container-hero-video .titulo-hero p {
+    font-size: 1.4rem;
+  }
+  .marcas .bkg-container-carousel .texto-carousel h3 {
+    margin-left: 3.125rem;
+    font-size: 2.083rem;
+  }
+  .marcas .bkg-container-carousel .texto-carousel p {
+    font-size: 1.2rem;
+  }
+  .imagen-y-login .container-login .bkg-login {
+    background-image: url("../images/minw1399-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .super-contenedor .titulos-faqs {
+    width: 90%;
+    padding: 1.4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .super-contenedor .titulos-faqs h1 {
+    padding: 2px;
+    margin: 2px 2px 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .super-contenedor .titulos-faqs p {
+    min-width: 90%;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+  }
+  .banner-productos {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/bkg-prod/bkg-prod1500.jpg");
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
